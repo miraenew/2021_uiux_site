@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+.topWrap {
+    border-bottom: 1px solid #aaa;
+}
+.topMenu {
+    width: 980px;
+}
+ul.util {
+    float: right;
+}
+ul.util li {
+    float: left;
+}
+.logoWrap {
+    padding: 8px;
+}
+.logoWrap h1 {
+    text-align: center;
+}
+.gnbWrap {
+    background-color: rgb(0, 45, 194);
+    margin: 0 auto;
+}
+ul.nav {
+    width: 980px;
+    margin: 0 auto;
+}
+ul.nav li {
+    float: left;
+}
+ul.nav li a{
+    color: #fff;
+    display: block;
+    padding: 5px;
+}
+.visual_bg {
+    position: relative;
+    overflow: hidden;
+}
+.visual_bg>img {
+    width: 100%;
+}
+.visual_txt h1 {
+    position: relative;
+}
+.visual_txt h1 a{
+    position: absolute;
+    top: -350px;
+    color: #fff;
+    right: 1300px;
+    letter-spacing: 3px;
+    font-size: 80px;
+}
+.visual_img {
+    position: absolute;
+    top: 0;
+    right: 150px;
+    
+}
+.banner {
+    background-color: rgb(206, 206, 206);
+}
+.icon {
+    width: 980px;
+    margin: 0 auto;
+}
+.icon li {
+    float: left;
+    width: 196px;
+}
+.icon img {
+    text-align: center;
+}
+.icon li h3 {
+    color: #fff;
+    text-align: center;
+}
+.icon li:nth-child(1) {
+    background-color: rgb(104, 209, 135);
+}
+.icon li:nth-child(2) {
+    background-color: rgb(156, 197, 42);
+}
+.icon li:nth-child(3) {
+    background-color: rgb(212, 197, 60);
+}
+.icon li:nth-child(4) {
+    background-color: rgb(228, 181, 82);
+}
+.icon li:nth-child(5) {
+    background-color: rgb(37, 209, 221);
+}
+.content {
+    width: 980px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+ul.1st {
+    float: left;
+}
+ul.1st li {
+    width: 326.6px;
+}
