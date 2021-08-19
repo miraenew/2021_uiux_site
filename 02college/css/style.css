@@ -1,0 +1,63 @@
+@charset "UTF-8";
+.headerTop {
+    width: 100%;
+    background-color: rgb(9, 36, 185);
+    margin-bottom: 20px;
+}
+.topWrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+.topWrap #topleft {
+    float: left;
+}
+.topWrap #topleft li {
+    float: left;
+    padding: 4px 20px;
+    margin-right: 2px;
+}
+.topWrap #topleft li{
+    background-color: rgb(7, 9, 43);
+}
+.topWrap #topleft li:hover {
+    background-color: #fff;
+}
+.topWrap #topleft li a:hover {
+    color: #000;
+}
+.topWrap #topright {
+    float: right;
+}
+.topWrap #topright li {
+    float: left;
+}
+.topWrap #topright li a {
+    color: #fff;
+    padding: 4px 5px;
+    font-size: 13px;
+}
+.topWrap #topleft li a {
+    color: #fff;
+}
+#header .bottomWrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+.bottomWrap .logo {
+    height: 81px;
+    line-height: 81px;
+    float: left;
+}
+.bottomWrap .Mainmenu {
+    height: 81px;
+    line-height: 81px;
+    float: right;
+}
+.bottomWrap .Mainmenu li {
+    float: left;
+    padding: 2px 20px;
+}
+#content{
+    background-image: url(images/배경01.jpg);
+    width: 100%;
+}
