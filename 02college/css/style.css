@@ -1,7 +1,14 @@
 @charset "UTF-8";
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 14px;
+}
+#header {
+    min-width: 1200px;
+}
 .headerTop {
     width: 100%;
-    background-color: rgb(9, 36, 185);
+    background-color: #0044af;
     margin-bottom: 20px;
 }
 .topWrap {
@@ -13,18 +20,23 @@
 }
 .topWrap #topleft li {
     float: left;
-    padding: 4px 20px;
     margin-right: 2px;
+    
 }
-.topWrap #topleft li{
-    background-color: rgb(7, 9, 43);
+.topWrap #topleft li a{
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    background-color: #00163b;
+    color: #fff;
+    width: 120px;
 }
-.topWrap #topleft li:hover {
-    background-color: #fff;
+/* .topWrap #topleft a.active, */
+.topWrap #topleft a:hover {
+    background: #fff;
+    color: #333;
 }
-.topWrap #topleft li a:hover {
-    color: #000;
-}
+
 .topWrap #topright {
     float: right;
 }
@@ -33,15 +45,29 @@
 }
 .topWrap #topright li a {
     color: #fff;
-    padding: 4px 5px;
+    padding: 0px 10px;
     font-size: 13px;
+    display: block;
+    line-height: 40px;
 }
-.topWrap #topleft li a {
-    color: #fff;
+.topWrap #topright li:nth-child(2){
+
+}
+.topWrap #topright li:nth-child(2) a{
+    float: left;
+    color: #000;
+    background: #fff;
+    line-height: 20px;
+    width: 20px;
+    padding: 0;
+    text-align: center;
+    margin-right: 2px;
+    margin-top: 10px;
 }
 #header .bottomWrap {
     width: 1200px;
     margin: 0 auto;
+    height: 115px;
 }
 .bottomWrap .logo {
     height: 81px;
@@ -56,8 +82,114 @@
 .bottomWrap .Mainmenu li {
     float: left;
     padding: 2px 20px;
+    font-size: 20px;
 }
-#content{
-    background-image: url(images/배경01.jpg);
-    width: 100%;
+#contents{
+    background-image: url(../images/main_bg.jpg);
+    background: rgba(90, 90, 90, 0.527)
+    height: 1300px; /* 나중에 삭제 */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto, cover;
+    padding-top: 75px;
+}
+#contents .title {
+    width: 1200px;
+    margin: 0 auto;
+    height: 130px;
+    margin-bottom: 55px;
+    color: #fff;
+}
+.title h3 {
+    font-size: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.title h1 {
+    font-size: 50px;
+}
+#contents .container {
+    width: 1200px;
+    margin: 0 auto;
+    background: #ddd
+}
+.container>ul>li {
+    float: left;
+    width: 25%;
+    height: 225px;
+}
+.container>ul>li:nth-child(1) {
+    width: 75%;
+    height: 450px;
+}
+
+.container>ul>li:nth-child(2){
+    width: 25%;
+    height: 450px;
+}
+.container>ul>li:nth-child(3) {
+    width: 25%;
+    height: 225px;
+    background-color: rgb(19, 16, 68);
+}
+.container>ul>li:nth-child(3) h3 {
+    color: #fff;
+    font-size: 20px;
+    padding: 8px;
+}
+.container>ul>li:nth-child(3)>ul>li>a {
+    color: #fff;
+    float: left;
+}
+.container>ul>li:nth-child(4){
+    padding: 5px;
+    width: 25%;
+    height: 225px;
+    background-color: rgb(37, 80, 199);
+    color: #fff;
+}
+.container>ul>li:nth-child(4) h3 {
+    padding: 8px;
+    border-bottom: 2px solid #fff;
+    font-size: 20px;
+}
+.container>ul>li:nth-child(4) table{
+    padding-top: 5px;
+}
+.container>ul>li:nth-child(4) table td a {
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 16px;
+}
+.container>ul>li:nth-child(5){
+    width: 25%;
+    height: 225px;
+    background-color: #fff;
+}
+.container>ul>li:nth-child(5) h3 {
+    padding: 8px;
+    font-size: 20px;
+}
+.container>ul>li:nth-child(5)>ul.news {
+    float: left;
+}
+.container>ul>li:nth-child(5) .sns {
+    float: right;
+}
+.container>ul>li:nth-child(5) .sns li {
+    margin-left: auto;
+}
+.container>ul>li:nth-child(6){
+    width: 25%;
+    height: 225px;
+    background-image: url(../images/학교02.jpg);
+}
+.container>ul>li:nth-child(7) {
+    width: 25%;
+    height: 225px;
+    background-image: url(../images/ground.png);
+}
+.container>ul>li:nth-child(8) {
+    width: 75%;
+    height: 225px;
 }

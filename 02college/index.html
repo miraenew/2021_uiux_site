@@ -5,24 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".slider1").bxSlider();
+            $(".slider2").bxSlider();
+        });
+    </script>
 </head>
 <body>
     <header id="header">
         <div class="headerTop">
             <div class="topWrap clearfix">
             <ul class="clearfix" id="topleft">
-                <li><a href="#">대학교</a></li>
-                <li><a href="#">입학안내</a></li>
-                <li><a href="#">대학원</a></li>
+                <li><a href="#" class="active">대학교</a></li>
+                <li><a href="#" class="active">입학안내</a></li>
+                <li><a href="#" class="active">대학원</a></li>
             </ul>
             <ul class="clearfix" id="topright">
                 <li><a href="#">글자크기</a></li>
-                <li><a href="#">+</a><a href="#">-</a></li>
+                <li class="clearfix"><a href="#">+</a><a href="#">-</a></li>
                 <li><a href="#">찾아오시는길</a></li>
                 <li><a href="#">ENGLISH</a></li>
                 <li><a href="#">사이트맵</a></li>
@@ -44,7 +56,86 @@
         </div>
         </div>
     </header>
-    <div id="content">
+    <div id="contents">
+        <section class="title">
+            <h3>함께 나누며 세상을 이끌어</h3><br>
+            <h1>세계로향하는 한국대학교</h1>
+        </section>
+        <div class="container">
+            <ul class="clearfix">
+                <li>
+                    <ul class="slider1">
+                        <li><img src="images/slide.png" alt=""></li>
+                        <li><img src="images/slide2.png" alt=""></li>
+                        <li><img src="images/slide3.png" alt=""></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><img src="images/bg2.png" alt=""></a>
+                </li>
+                <li>
+                    <h3>HOT LINK</h3>
+                    <ul>
+                        <li><a href="#">
+                            <img src="images/link1.png" alt="">
+                            <h4>국제교류<br>센터</h4>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="" alt="">
+                            <h4>원격지원<br>시스템</h4>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="" alt="">
+                            <h4>예산/결산<br>공고</h4>
+                        </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>공지사항</h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><a href="#">[공지]한국대학교 웹진...</a></td>
+                                <td><a href="#">2016-06-12</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">[보도]우수대학교 선정 수상</a></td>
+                                <td><a href="#">2016-06-17</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">[공지]대학입시 설명회</a></td>
+                                <td><a href="#">2016-06-05</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">[공지]2016년 1학기 성적...</a></td>
+                                <td><a href="#">2016-05-14</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li class="clearfix">
+                    <h3>SNS NEWS</h3>
+                    <ul class="news">
+                        <li><a href="#"><img src="images/학교01.jpg" alt=""></a></li>
+                        <li><a href="#"><p>한국 대학교는 2017학년도 신입생 입학식을 3월 2일(목) 본교 종합체육관 ...</p></a></li>
+                    </ul>
+                    <ul class="sns">
+                        <li><a href="#"><img src="images/sns1.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/sns2.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/sns3.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/sns4.png" alt=""></a></li> 
+                    </ul>
+                </li>
+                <li>6</li>
+                <li>7</li>
+                <li>
+                    <ul class="slider2">
+                        <li><img src="images/banner01.png" alt=""></li>
+                        <li><img src="images/banner02.png" alt=""></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>

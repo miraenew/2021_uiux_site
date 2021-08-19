@@ -16,3 +16,6 @@ a:visited, a:link {
 li {
     list-style: none;
 }
+img {
+    display: block;
+}
