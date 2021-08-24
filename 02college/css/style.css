@@ -197,13 +197,8 @@ body {
     height: 225px;
     background-color: #fff;
 }
-.container>ul>li:nth-child(5) ul:first-child li:last-child {
-    width: 150px;
-    height: 80px;
+.container>ul>li:nth-child(5) .newsWrap .news li:nth-child(2){
     float: right;
-}
-.container>ul>li:nth-child(5) ul:last-child .sns {
-    float: left;
 }
 .container>ul>li:nth-child(5) h3 {
     padding: 8px;
@@ -213,6 +208,17 @@ body {
     width: 25%;
     height: 225px;
     background-image: url(../images/학교02.jpg);
+    position: relative;
+}
+.container>ul>li:nth-child(6) .txt {
+    background-color: rgba(0, 0, 0, 0.705);
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
 }
 .container>ul>li:nth-child(7) {
     width: 25%;
