@@ -224,6 +224,12 @@ body {
     width: 25%;
     height: 225px;
     background-image: url(../images/ground.png);
+    position: relative;
+}
+.container>ul>li:nth-child(7) img {
+    position: absolute;
+    top: 30%;
+    left: 30%;
 }
 .container>ul>li:nth-child(8) {
     width: 75%;
