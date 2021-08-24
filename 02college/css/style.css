@@ -259,12 +259,21 @@ body {
 }
 .bottom li {
     float: left;
-    padding: 8px 10px;
+    line-height: 50px;
+    padding: 0 20px;
+}
+.bottom li:nth-child(2) {
+    position: relative;
 }
 .bottom li:nth-child(2)::after {
     content: "";
     display: block;
-    
+    width: 1px;
+    height: 50px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 120px;
 }
 #footer {
     width: 1200px;
