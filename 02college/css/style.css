@@ -251,6 +251,21 @@ body {
     color: #fff;
     padding: 10px 30px;
 }
+.bottom {
+    width: 1200px;
+    margin: 0 auto;
+    height: 50px;
+    background: #fff;
+}
+.bottom li {
+    float: left;
+    padding: 8px 10px;
+}
+.bottom li:nth-child(2)::after {
+    content: "";
+    display: block;
+    
+}
 #footer {
     width: 1200px;
     margin: 0 auto;
