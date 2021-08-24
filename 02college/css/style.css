@@ -228,6 +228,22 @@ body {
 .container>ul>li:nth-child(8) {
     width: 75%;
     height: 225px;
+    position: relative;
+}
+.container>ul>li:nth-child(8) .txt {
+    color: #f00;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.container>ul>li:nth-child(8) .txt h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.container>ul>li:nth-child(8) button {
+    background-color: rgba(228, 18, 18, 0.74);
+    color: #fff;
+    padding: 10px 30px;
 }
 #footer {
     width: 1200px;
