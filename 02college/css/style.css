@@ -50,9 +50,6 @@ body {
     display: block;
     line-height: 40px;
 }
-.topWrap #topright li:nth-child(2){
-
-}
 .topWrap #topright li:nth-child(2) a{
     float: left;
     color: #000;
@@ -85,8 +82,7 @@ body {
     font-size: 20px;
 }
 #contents{
-    background-image: url(../images/main_bg.jpg);
-    background: rgba(90, 90, 90, 0.527)
+    background-image: url(../images/schoolbg.png);
     height: 1300px; /* 나중에 삭제 */
     background-repeat: no-repeat;
     background-position: center;
@@ -120,16 +116,51 @@ body {
 .container>ul>li:nth-child(1) {
     width: 75%;
     height: 450px;
+    position: relative;
 }
-
+.container>ul>li:nth-child(1) .txt {
+    font-size: 50px;
+    color: rgb(12, 12, 148);
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-weight: bold;
+    letter-spacing: 5px;;
+}
+.container>ul>li:nth-child(1) button {
+    background-color: rgb(15, 4, 65);
+    color: #fff;
+    padding: 10px 50px;
+}
 .container>ul>li:nth-child(2){
     width: 25%;
     height: 450px;
+    position: relative;
+}
+.container>ul>li:nth-child(2) .txt {
+    font-size: 20px;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    color: #fff;
+}
+.container>ul>li:nth-child(2) h1,
+.container>ul>li:nth-child(2) p {
+    margin-bottom: 25px;
+}
+.container>ul>li:nth-child(2) button {
+    background-color: rgba(0, 0, 0, 0.521);
+    color: #fff;
+    padding: 10px 50px;
 }
 .container>ul>li:nth-child(3) {
     width: 25%;
     height: 225px;
     background-color: rgb(19, 16, 68);
+}
+.container>ul>li:nth-child(3) li {
+    text-align: center;
+    padding-left:30px;
 }
 .container>ul>li:nth-child(3) h3 {
     color: #fff;
@@ -166,18 +197,17 @@ body {
     height: 225px;
     background-color: #fff;
 }
+.container>ul>li:nth-child(5) ul:first-child li:last-child {
+    width: 150px;
+    height: 80px;
+    float: right;
+}
+.container>ul>li:nth-child(5) ul:last-child .sns {
+    float: left;
+}
 .container>ul>li:nth-child(5) h3 {
     padding: 8px;
     font-size: 20px;
-}
-.container>ul>li:nth-child(5)>ul.news {
-    float: left;
-}
-.container>ul>li:nth-child(5) .sns {
-    float: right;
-}
-.container>ul>li:nth-child(5) .sns li {
-    margin-left: auto;
 }
 .container>ul>li:nth-child(6){
     width: 25%;
@@ -193,3 +223,12 @@ body {
     width: 75%;
     height: 225px;
 }
+#footer {
+    width: 1200px;
+    margin: 0 auto;
+}
+#footer li {
+    float: left;
+    padding: 5px;
+}
+
