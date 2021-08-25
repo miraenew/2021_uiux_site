@@ -261,10 +261,13 @@ body {
 .bottom li {
     float: left;
     line-height: 50px;
-    padding: 0 20px;
+}
+.bottom li:nth-child(1) {
+    padding: 0 25px;
 }
 .bottom li:nth-child(2) {
     position: relative;
+    padding: 0 25px;
 }
 .bottom li:nth-child(2)::after {
     content: "";
@@ -275,6 +278,12 @@ body {
     position: absolute;
     top: 0;
     left: 120px;
+}
+.bottom li:nth-child(3) {
+    padding: 0 25px;
+}
+.bottom li:nth-child(4) {
+    padding: 0 30px;
 }
 #footer {
     width: 1200px;
