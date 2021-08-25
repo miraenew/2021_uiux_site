@@ -106,7 +106,8 @@ body {
 #contents .container {
     width: 1200px;
     margin: 0 auto;
-    background: #ddd
+    background: #ddd;
+    margin-bottom: 30px;
 }
 .container>ul>li {
     float: left;
