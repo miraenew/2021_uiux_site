@@ -18,8 +18,16 @@
     <script src="js/jquery.bxslider.js"></script>
     <script>
         $(document).ready(function(){
-            $(".slider1").bxSlider();
-            $(".slider2").bxSlider();
+            $(".slider1").bxSlider({
+                auto:true,
+                pager:false,
+                control:false,
+            });
+            $(".slider2").bxSlider({
+                pager:false,
+                auto:true,
+                control:false
+            });
         });
     </script>
 </head>
@@ -58,12 +66,17 @@
     </header>
     <div id="contents">
         <section class="title">
+            <div class="txt">
             <h3>함께 나누며 세상을 이끌어</h3><br>
             <h1>세계로향하는 한국대학교</h1>
+        </div>
+        <div class="icon">
+            <img src="images/icon.png" alt="">
+        </div>
         </section>
         <div class="container">
             <ul class="clearfix">
-                <li>
+                <li class="sliderWrap">
                     <ul class="slider1">
                         <li><img src="images/slide.png" alt="">
                             <div class="txt">

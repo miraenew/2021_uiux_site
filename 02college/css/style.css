@@ -103,6 +103,14 @@ body {
 .title h1 {
     font-size: 50px;
 }
+section.title {
+    position: relative;
+}
+section.title .icon{
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
 #contents .container {
     width: 1200px;
     margin: 0 auto;
@@ -118,6 +126,13 @@ body {
     width: 75%;
     height: 450px;
     position: relative;
+}
+.container>ul>li:nth-child(1) .slider1 {
+    width: 100%;
+}
+.container>ul>li:nth-child(1) .bx-wrapper {
+    border: 0 none;
+    box-shadow: 0 none;
 }
 .container>ul>li:nth-child(1) .txt {
     font-size: 50px;
@@ -243,6 +258,13 @@ body {
     width: 75%;
     height: 225px;
     position: relative;
+}
+.container>ul>li:nth-child(8) .slider2 {
+    width: 100%;
+}
+.container>ul>li:nth-child(8) .bx-wrapper {
+    border: 0 none;
+    box-shadow: 0 none;
 }
 .container>ul>li:nth-child(8) .txt {
     color: #f00;
