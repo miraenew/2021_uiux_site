@@ -95,6 +95,7 @@ body {
     height: 130px;
     margin-bottom: 55px;
     color: #fff;
+    position: relative;
 }
 .title h3 {
     font-size: 30px;
@@ -104,9 +105,11 @@ body {
     font-size: 50px;
 }
 .icon {
-    float: right;
     height: 130px;
     line-height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 .icon li {
     float: left;
