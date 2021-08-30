@@ -103,13 +103,19 @@ body {
 .title h1 {
     font-size: 50px;
 }
-section.title {
-    position: relative;
+.icon {
+    float: right;
+    height: 130px;
+    line-height: 50px;
 }
-section.title .icon{
-    position: absolute;
-    top: 20px;
-    right: 0;
+.icon li {
+    float: left;
+    margin-right: 20px;
+}
+.icon li img {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 10px;
 }
 #contents .container {
     width: 1200px;
