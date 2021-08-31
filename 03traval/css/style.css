@@ -1,0 +1,28 @@
+@charset "UTF-8";
+#header {
+    width: 100%;
+    height: 100px;
+    background: rgb(37, 97, 165) url(../images/04비행기-Recovered.png) no-repeat center;
+}
+.hdTop {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.hdBtm {
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+
+}
+.hdBtm ul {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+.hdBtm ul li{
+    padding: 10px 20px;
+    margin: 0 auto;
+    font-weight: bold;
+}
