@@ -2,93 +2,64 @@
 #header {
     width: 100%;
     height: 100px;
-    background: #0a6fa5 url(../images/04비행기-Recovered.png) no-repeat center;
+    background-image: url(../images/04비행기-Recovered.png);
     position: fixed;
 }
 .hdTop {
     width: 1200px;
+    padding: 8px;
     margin: 0 auto;
-    padding: 10px;
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-around;
 }
-<<<<<<< HEAD
 .hdTop .search {
-    line-height: 35px;
+    font-family: 'Ubuntu', sans-serif;
 }
-.hdTop fieldset {
-    border: 0 none;
-}
-.hdTop form {
-    position: relative;
-}
-.hdTop .searchTitle {
-    font-family: 'Poppins', sans-serif;
-    position: absolute;
-    padding: 0 10px;
-    line-height: 40px;
-}
-.hdTop input {
+.hdTop .search input {
+    border-radius: 50px;
+    padding: 8px 40px;
     text-align: right;
 }
-.hdTop form img {
-    position: absolute;
-    top: 13px;
-    right: 10px;
-} 
-.hdTop .searchArea {
+.hdTop fieldset{
     border: 0 none;
-    border-radius: 50px;
-    padding: 5px 50px;
-}
-.util ul {
-    display: flex;
-}
-.util li {
-    padding: 5px;
-=======
-.search {
-    background: #fff;
-    width: 300px;
-    height: 30px;
-    border-radius: 20px;
-    font-family: 'Ubuntu', sans-serif;
     position: relative;
 }
-fieldset {
-    border: 0 none;
+.hdTop fieldset label {
     position: absolute;
-    top: 5px;
+    top: 7px;
     left: 10px;
 }
-fieldset input {
-    border: 0 none;
-    text-align: center;
->>>>>>> 90647fbc6b84aab0979b3d79cbc8e2dad8818182
+.hdTop fieldset img {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+}
+.util ul li {
+    float: left;
+    padding: 5px;
+}
+.util ul li:first-child {
+    color: #fff;
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
 }
 .hdBtm {
-    width: 100%;
-    background-color: rgb(245, 245, 245);
-    
-
+    background: rgb(235, 235, 235);
+    padding: 5px;
 }
 .hdBtm ul {
-    width: 1200px;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.hdBtm ul li{
-    padding: 10px 60px;
-    font-weight: bold;
-<<<<<<< HEAD
-    border-right: 1px solid rgb(209, 209, 209);
-    font-size: 21px;
+.hdBtm li {
+    border-right: 1px solid rgb(221, 221, 221);
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
+    padding: 5px 50px;
 }
-.hdBtm ul li:first-child {
-    border-left: 1px solid rgba(209, 209, 209);
+.hdBtm li:first-child {
+    border-left: 1px solid rgb(221, 221, 221);;
 }
 .Wrap {
     width: 100%;
@@ -96,34 +67,7 @@ fieldset input {
 .Wrap img {
     width: 100%;
 }
-.contents {
+.Wrap .contents {
     width: 1200px;
     margin: 0 auto;
-    border: 1px solid #000; /* 완료 후 삭제*/
-=======
-    position: relative;
-}
-.hdBtm ul li a {
-    text-align: center;
-}
-.hdBtm ul li:after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 1px;
-    height: 40px;
-    background: rgb(173, 173, 173);
-    right: 0;
-    top: 0;
-}
-.hdBtm ul li:first-child::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 1px;
-    height: 40px;
-    background: rgb(173, 173, 173);
-    left: 0;
-    top: 0;  
->>>>>>> 90647fbc6b84aab0979b3d79cbc8e2dad8818182
 }
