@@ -74,17 +74,16 @@
 .Wrap .contents {
     width: 1200px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-}
-.reserv {
-    display: flex;
+    position: relative;
+    transform: translateY(-300%);
 }
 .contents form {
     background-color: #fff;
     width: 350px;
     line-height: 30px;
+    position: absolute;
+    top: 0;
+    left: 150px;
 }
 .contents form fieldset {
     border: 0 none;
@@ -93,7 +92,15 @@
     padding-top: 20px;
 }
 form .tourSearch {
-    margin: 0 auto;
+    margin-left: 20px;
+}
+form select {
+    border: 1px solid rgb(180, 180, 180);
+    padding: 5px 10px;
+}
+form input {
+    padding: 5px 10px;
+    border: 1px solid rgb(180, 180, 180);
 }
 .reserv li a {
     color: #fff;
@@ -110,16 +117,49 @@ form .tourSearch {
 fieldset ul li:nth-child(2) {
     display: flex;
 }
-.contents .txt {
+.contents>.txt {
     font-family: 'Heebo', sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     letter-spacing: 0.1em;
     padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
 }
 .contents .txt .ko {
     font-family: 'Gowun Dodum', sans-serif;
     font-size: 20px;
 }
+.balloon {
+    float: right;
+}
+.balloon img{
+    width: 700px;
+    position: absolute;
+    top: 50px;
+    left: 40%;
+}
+.tour1>.tourImg img {
+    width: 240px;
+    margin-right: 20px;
+}
+.tour1 li {
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+.tour1 li .txt {
+    position: absolute;
+    bottom: 10px;
+    background: rgba(5, 62, 88, 0.822);
+    color: #fff;
+}
+.tour1 li .txt .num {
+    color: rgb(24, 112, 71);
+    font-weight: bold;
+    float: right;
+}
+/* /////////// */
 .subContents .subimg{
     height: 200px;
     background: rgb(77, 44, 44);
