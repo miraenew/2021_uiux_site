@@ -159,6 +159,35 @@ fieldset ul li:nth-child(2) {
     font-weight: bold;
     float: right;
 }
+.sliderWrap {
+    position: relative;
+}
+.sliderWrap .slider img {
+    width: 250px;
+}
+.bx-wrapper {
+    -moz-box-shadow: 0 none;
+         box-shadow: 0 none;
+         -webkit-box-shadow: 0 none;
+         border: 0 none;
+         margin-bottom: 0;
+}
+.bx-wrapper .bx-pager {
+    border: 30px;
+}
+.nextBtn, .preBtn {
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    cursor: pointer;
+}
+    .nextBtn {
+        right: 0;
+    }
+    .preBtn {
+        left: 0;
+    }
+
 /* /////////// */
 .subContents .subimg{
     height: 200px;

@@ -15,6 +15,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+<script>
+    $(document).ready(function(){
+        var myslide = $(".slider").bxSlider({
+            controls:false
+        });
+        $(".nextBtn").click(function(){
+            myslide.goToNextSlide();
+        });
+        $(".preBtn").click(function(){
+            myslide.goToPrevSlide();
+        });
+    });
+</script>
 </head>
 
 <body>
@@ -121,7 +134,19 @@
                     <img src="images/02풍선.png" alt="">
                 </div>
             </div>
-            <div class="tour2"></div>
+                <div class="sliderWrap">
+                    <ul class="slider">
+                        <li><a href="#"><img src="images/03여행03.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/03여행04.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/03여행05.jpg" alt=""></a></li>
+                    </ul>
+                    <div class="nextBtn">
+                        <img src="images/btn_left.png" alt="">
+                    </div>
+                    <div class="preBtn">
+                        <img src="images/btn_right.png" alt="">
+                    </div>
+                </div>
         </div>
     </div>
 </body>
