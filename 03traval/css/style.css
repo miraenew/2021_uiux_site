@@ -14,7 +14,7 @@
     justify-content: space-around;
 }
 .hdTop .search {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu';
 }
 .hdTop .search input {
     border-radius: 50px;
@@ -59,6 +59,9 @@
     font-size: 20px;
     padding: 5px 50px;
 }
+.hdBtm li.active {
+    background: rgb(97, 97, 97);
+}
 .hdBtm li:first-child {
     border-left: 1px solid rgb(221, 221, 221);;
 }
@@ -71,15 +74,26 @@
 .Wrap .contents {
     width: 1200px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.reserv {
+    display: flex;
 }
 .contents form {
     background-color: #fff;
+    width: 350px;
+    line-height: 30px;
 }
 .contents form fieldset {
     border: 0 none;
     font-weight: bold;
     padding-left: 20px;
     padding-top: 20px;
+}
+form .tourSearch {
+    margin: 0 auto;
 }
 .reserv li a {
     color: #fff;
@@ -95,4 +109,36 @@
 }
 fieldset ul li:nth-child(2) {
     display: flex;
+}
+.contents .txt {
+    font-family: 'Heebo', sans-serif;
+    font-size: 40px;
+    letter-spacing: 0.1em;
+    padding: 20px;
+}
+.contents .txt .ko {
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 20px;
+}
+.subContents .subimg{
+    height: 200px;
+    background: rgb(77, 44, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subContents.company .subImg {
+    background-image: url(../images/subimg01.jpg);
+    display: block;
+    margin: 0 auto;
+}
+.subContents.company .container {
+    border: 1px solid rgb(107, 107, 107);
+    border-top: 1px solid rgb(14, 139, 223);
+    position: relative;
+    top: -50px;
+    background: #fff;
+}
+body.sub {
+    background: #ccc;
 }
