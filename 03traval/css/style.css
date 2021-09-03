@@ -68,111 +68,134 @@
 }
 .Wrap {
     padding-top: 30px;
-    background: url(../images/01배경.jpg) no-repeat center;
+    background: url(../images/01background.jpg) no-repeat center;
     background-size: cover;
 }
-.Wrap .contents {
+.contentBox {
     width: 980px;
     margin: 0 auto;
-    position: relative;
-    background-image: url(../images/02풍선.png);
-    background-position: right bottom;
 }
-.contents form {
-    background-color: #fff;
-    width: 350px;
-    line-height: 30px;
-    position: absolute;
-    top: 0;
-    left: 150px;
-}
-.contents form fieldset {
-    border: 0 none;
-    font-weight: bold;
-    padding-left: 20px;
-    padding-top: 20px;
-}
-form .tourSearch {
-    margin-left: 20px;
-}
-form select {
-    border: 1px solid rgb(180, 180, 180);
-    padding: 5px 10px;
-}
-form input {
-    padding: 5px 10px;
-    border: 1px solid rgb(180, 180, 180);
-}
-.reserv li a {
-    color: #fff;
-    display: block;
-    width: 150px;
-    text-align: center;
-    padding: 20px 5px;
-    background-color: rgb(36, 169, 209);
-}
-.reserv li a:hover {
-    color: #000;
-    background-color: #fff;
-}
-fieldset ul li:nth-child(2) {
-    display: flex;
-}
-.reserv {
+.TopLeftcon {
     float: left;
 }
-.txt {float: right;}
-.txt .eng {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 40px;
-    letter-spacing: 0.08em;
+.TopLeftcon .reserv {
+    margin-bottom: 20px;
 }
-.txt .ko {
-    font-family: 'Gothic A1', sans-serif;
+.TopLeftcon .reserv>ul {
+    float: left;
 }
-.bx-wrapper {
-    -moz-box-shadow: 0 none;
-         box-shadow: 0 none;
-         -webkit-box-shadow: 0 none;
-         border: 0 none;
-         margin-bottom: 0;
-}
-.bx-wrapper .bx-pager {
-    border: 30px;
-}
-.nextBtn, .preBtn {
-    position: absolute;
-    top: 50%;
-    margin-top: -50px;
-    cursor: pointer;
-}
-    .nextBtn {
-        right: 0;
-    }
-    .preBtn {
-        left: 0;
-    }
-
-/* /////////// */
-.subContents .subimg{
-    height: 200px;
-    background: rgb(77, 44, 44);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.subContents.company .subImg {
-    background-image: url(../images/subimg01.jpg);
+.TopLeftcon .reserv>ul>li>a {
     display: block;
-    margin: 0 auto;
+    background: rgb(17, 115, 196);
+    color: #fff;
+    padding: 20px 30px;
+    text-align: center;
+    font-weight: bold;
 }
-.subContents.company .container {
-    border: 1px solid rgb(107, 107, 107);
-    border-top: 1px solid rgb(14, 139, 223);
-    position: relative;
-    top: -50px;
+.TopLeftcon .reserv>ul>li>a:hover {
+    color: #000;
     background: #fff;
 }
-body.sub {
-    background: #ccc;
+.TopLeftcon .reserv .resChoose {
+    background: #fff;
+    font-weight: bold;
+    width: 500px;
+    line-height: 29px;
+}
+.TopLeftcon .reserv .resChoose select,
+.TopLeftcon .reserv .resChoose input {
+    padding: 2px 10px;
+}
+.TopLeftcon .reserv .resChoose button {
+    width: 80%;
+    padding: 5px 0;
+    font-size: 18px;
+}
+.TopRightcon {
+    background-image: url(../images/02balloon.png);
+    background-position: right bottom;
+    
+}
+.TopRightcon .mainTxt .eng {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.TopRightcon .mainTxt .ko {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 20px;
+}
+.saletour li {
+    float: left;
+    margin-right: 20px;
+}
+.saletour .txt {
+    background: rgb(21, 38, 39);
+    padding: 5px 10px;
+}
+.saletour .txt .ko {
+    color: #fff;
+    font-weight: bold;
+    float: left;
+}
+.saletour .txt .num {
+    color: rgb(37, 153, 72);
+    font-weight: bold;
+    text-align: center;
+}
+.content2 {
+    width: 980px;
+    margin: 0 auto;
+}
+.content2 .slider1 li {
+    position: relative;
+    width: 233px;
+}
+.content2 .slider1 li:nth-child(1) .txt {
+    background: rgb(108, 185, 131);
+    color: #fff;
+}
+.content2 .slider1 li>.txt {
+    background: rgb(28, 43, 44);
+    padding: 8px 10px;
+    color: #fff;
+    display: inline-block;
+    width: 233px;
+    position: absolute;
+    top: 180px;
+}
+.weather {
+    position: relative;
+}
+.content2 .weather span {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    color: #fff;
+}
+.content2 .weather .txt{
+    background: rgba(0, 0, 0, 0.733);
+    color: #fff;
+}
+.content2 .txt .min {
+    font-size: 12px;
+}
+.content2 ul:nth-child(3) li {
+    float: left;
+}
+.snstour {
+    position: relative;
+}
+.snstour span{
+    position: absolute;
+    font-size: 15px;
+    top: 10px;
+}
+.content2 .snstour .txt{
+    background: rgba(2, 19, 255, 0.733);
+    color: #fff;
+.content2 ul i:nth-child(1),
+.content2 ul i:nth-child(2),
+.content2 ul i:nth-child(3) {
+    background: rgb(229, 255, 0); 
 }
