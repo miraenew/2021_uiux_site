@@ -151,6 +151,9 @@
     position: relative;
     width: 233px;
 }
+.content2 .slider1 ul:nth-child(2) {
+    transform: translate(-50%, -50%);
+}
 .content2 .slider1 li:nth-child(1) .txt {
     background: rgb(108, 185, 131);
     color: #fff;
@@ -194,6 +197,7 @@
 .content2 .snstour .txt{
     background: rgba(2, 19, 255, 0.733);
     color: #fff;
+}
 .content2 ul i:nth-child(1),
 .content2 ul i:nth-child(2),
 .content2 ul i:nth-child(3) {
