@@ -78,6 +78,9 @@
     background-image: url(../images/02풍선.png);
     background-position: right bottom;
 }
+.reserv .active {
+    
+}
 .contents form {
     background-color: #fff;
     width: 350px;
