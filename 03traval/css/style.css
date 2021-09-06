@@ -74,6 +74,7 @@
 .contentBox {
     width: 980px;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 .TopLeftcon {
     float: left;
@@ -111,11 +112,6 @@
     padding: 5px 0;
     font-size: 18px;
 }
-.TopRightcon {
-    background-image: url(../images/02balloon.png);
-    background-position: right bottom;
-    
-}
 .TopRightcon .mainTxt .eng {
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 50px;
@@ -147,59 +143,12 @@
     width: 980px;
     margin: 0 auto;
 }
-.content2 .slider1 li {
-    position: relative;
-    width: 233px;
-}
-.content2 .slider1 ul:nth-child(2) {
-    transform: translate(-50%, -50%);
-}
-.content2 .slider1 li:nth-child(1) .txt {
-    background: rgb(108, 185, 131);
-    color: #fff;
-}
-.content2 .slider1 li>.txt {
-    background: rgb(28, 43, 44);
-    padding: 8px 10px;
-    color: #fff;
-    display: inline-block;
-    width: 233px;
-    position: absolute;
-    top: 180px;
-}
-.weather {
-    position: relative;
-}
-.content2 .weather span {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    color: #fff;
-}
-.content2 .weather .txt{
-    background: rgba(0, 0, 0, 0.733);
-    color: #fff;
-}
-.content2 .txt .min {
-    font-size: 12px;
-}
-.content2 ul:nth-child(3) li {
+.content2>ul>li {
     float: left;
+    width: 233px;
+    margin-right: 20px;
 }
-.snstour {
-    position: relative;
-}
-.snstour span{
-    position: absolute;
-    font-size: 15px;
-    top: 10px;
-}
-.content2 .snstour .txt{
-    background: rgba(2, 19, 255, 0.733);
-    color: #fff;
-}
-.content2 ul i:nth-child(1),
-.content2 ul i:nth-child(2),
-.content2 ul i:nth-child(3) {
-    background: rgb(229, 255, 0); 
+.content2>ul>li:first-child li .txt{
+    background: rgb(21, 38, 39);
+    padding: 5px 10px;
 }
