@@ -151,4 +151,10 @@
 .content2>ul>li:first-child li .txt{
     background: rgb(21, 38, 39);
     padding: 5px 10px;
+    color: #fff;
+}
+.content2>ul>li:nth-child(2) li .txt {
+    background: #12202e;
+    padding: 5px 10px;
+    color: #fff;
 }
