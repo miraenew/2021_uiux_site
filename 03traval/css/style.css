@@ -180,7 +180,6 @@
     padding: 5px;
 }
 .content2>ul>li:nth-child(4) {
-    float: right;
     position: relative;
 }
 .content2>ul>li:nth-child(4) span {
@@ -190,4 +189,12 @@
     letter-spacing: -2px;
     color: #555;
     font-weight: bold;
+}
+.content3 {
+    width: 980px;
+    margin: 0 auto;
+}
+.content3>ul>li {
+    width: 233px;
+    float: left;
 }
