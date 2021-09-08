@@ -158,3 +158,36 @@
     padding: 5px 10px;
     color: #fff;
 }
+.small {
+    font-size: 14px;
+}
+.content2>ul>li:nth-child(3) {
+    position: relative;
+}
+.content2>ul>li:nth-child(3) span {
+    position: absolute;
+    top: 10px;
+    left: 90px;
+}
+.content2>ul>li:nth-child(3) .txt{
+    background-color: rgba(0, 0, 0, 0.808);
+    color: #fff;
+    padding: 5px;
+}
+.content2>ul>li:nth-child(4) .txt{
+    background-color: rgb(54, 101, 204);
+    color: #fff;
+    padding: 5px;
+}
+.content2>ul>li:nth-child(4) {
+    float: right;
+    position: relative;
+}
+.content2>ul>li:nth-child(4) span {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    letter-spacing: -2px;
+    color: #555;
+    font-weight: bold;
+}
