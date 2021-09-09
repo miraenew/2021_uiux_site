@@ -145,8 +145,7 @@
 }
 .content2>ul>li {
     float: left;
-    width: 233px;
-    margin-right: 20px;
+    width: calc(100% / 4);
 }
 .content2>ul>li:first-child li .txt{
     background: rgb(21, 38, 39);
@@ -194,7 +193,11 @@
     width: 980px;
     margin: 0 auto;
 }
-.content3>ul>li {
-    width: 233px;
+.content3 li {
     float: left;
+    margin-right: 20px;
+    width: calc(100% / 4);
+}
+.content3 li img {
+    width: 100%;
 }
