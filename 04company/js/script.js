@@ -2,10 +2,22 @@ $(document).ready(function(){
     const slider1 = $(".slider").bxSlider({
         controls:false
     });
-    $(".nextBtn").click(function(){
+    $(".sliderWrap .nextBtn").click(function(){
         slider1.goToNextSlide();
-    });$(".prevBtn").click(function(){
+    });
+    $(".sliderWrap .prevBtn").click(function(){
         slider1.goToPrevSlide();
+    });
+    const slider2 = $(".slider2").bxSlider({
+        controls:false,
+        pager:false,
+        auto:true 
+    });
+    $(".slider2Wrap .nextBtn").click(function(){
+        slider2.goToNextSlide();
+    });
+    $(".slider2Wrap .prevBtn").click(function(){
+        slider2.goToPrevSlide();
     });
     $(".toggle").click(function(){
         const toggle = $(".toggle").attr("class"); // value toggle
