@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GANGWONFC</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style1.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/script2.js"></script>
 </head>
 <body>
     <header id="header">
@@ -14,7 +17,7 @@
             <h1><a href="#"><img src="images2/LOGO.png" alt=""></a></h1>
             <nav class="gnb">
                 <ul class="clearfix">
-                    <li><a href="#">강원fc
+                    <li class="mainLi"><a href="#">강원FC
                         <ul class="subMenu">
                             <li><a href="#">구단소개</a></li>
                             <li><a href="#">유니폼</a></li>
@@ -24,7 +27,7 @@
                             <li><a href="#">주주확인</a></li>
                         </ul>
                     </a></li>
-                    <li><a href="#">구단소식
+                    <li class="mainLi"><a href="#">구단소식
                         <ul class="subMenu">
                             <li><a href="#">공지사항</a></li>
                             <li><a href="#">구단뉴스</a></li>
@@ -32,7 +35,7 @@
                             <li><a href="#">구단사진</a></li>
                         </ul>
                     </a></li>
-                    <li><a href="#">선수단
+                    <li class="mainLi"><a href="#">선수단
                         <ul class="subMenu">
                             <li><a href="#">선수</a></li>
                             <li><a href="#">코칭스태프</a></li>
@@ -40,13 +43,13 @@
                             <li><a href="#">U-15</a></li>
                         </ul>
                     </a></li>
-                    <li><a href="#">스폰서
+                    <li class="mainLi"><a href="#">스폰서
                         <ul class="subMenu">
                             <li><a href="#">공식스폰서</a></li>
                             <li><a href="#">후원의 집</a></li>
                         </ul>
                     </a></li>
-                    <li><a href="#">경기/티켓
+                    <li class="mainLi"><a href="#">경기/티켓
                         <ul class="subMenu">
                             <li><a href="#">경기일정</a></li>
                             <li><a href="#">구단순위</a></li>
@@ -55,7 +58,7 @@
                             <li><a href="#">버스신청</a></li>
                         </ul>
                     </a></li>
-                    <li><a href="#">사회공헌
+                    <li class="mainLi"><a href="#">사회공헌
                         <ul class="subMenu">
                             <li><a href="#">강웅이와 함께 으라차차</a></li>
                             <li><a href="#">축구클리닉</a></li>
@@ -68,32 +71,110 @@
             </nav>
         </div>
     </header>
-    <div class="visual">
-        <ul>
+    <div class="visualWrap">
+        <ul class="visual clearfix">
             <li><a href="#"><img src="images2/visualSlide1.png" alt=""></a></li>
             <li><a href="#"><img src="images2/visualSlide2.png" alt=""></a></li>
             <li><a href="#"><img src="images2/visualSlide3.png" alt=""></a></li>
         </ul>
     </div>
-    <div class="contents">
-        <ul class="clearfix">
-            <li>
-                <div class="match">
-                    <span>NEXT <b>HOME MATCH</b></span>
+    <div class="contentWrap">
+        <div class="contents">
+            <ul class="clearfix">
+                <li>
+                    <div class="match">
+                        <span>NEXT <b>HOME MATCH</b></span>
+                        <div class="vs clearfix">
+                        <img src="images2/vs1.png" alt="">
+                        <span><b>VS</b></span>
+                        <img src="images2/vs2.png" alt="">
+                    </div>
+                    <div class="area">
+                        <p>강원</p>
+                        <p>포항</p>
+                    </div>
+                    <p><b>09월 18일(토) 19:00<br>강릉</b></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="link">
+                        <span><b>QUICK LINK</b></span>
+                        <ul class="icon">
+                            <li>
+                                <img src="images2/moodboard/money.png" alt="">
+                                <p>티켓</p>
+                            </li>
+                            <li>
+                                <img src="images2/moodboard/directions_bus.png" alt="">
+                                <p>버스</p>
+                            </li>
+                            <li>
+                                <img src="images2/moodboard/thumb_up.png" alt="">
+                                <p>스폰서</p></li>
+                            <li>
+                                <img src="images2/moodboard/money.png" alt="">
+                                <p>티켓</p>
+                            </li>
+                            <li>
+                                <img src="images2/moodboard/shopping_cart.png" alt="">
+                                <p>쇼핑몰</p>
+                            </li>
+                            <li>
+                                <img src="images2/moodboard/sim_card.png" alt="">
+                                <p>주주</p>
+                            </li>
+                            <li>
+                                <img src="images2/moodboard/public.png" alt="">
+                                <p>사회공헌</p>
+                            </li>
+                            <li>
+                                <img src="images2/moodboard/money.png" alt="">
+                                <p>티켓</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <i>GRATE</i><br>
+                    <img src="images2/vs2.png" alt=""><br>
+                    <i>UNION</i>
+                </li>
+                <li>
+                    <div class="csr">
+                        <h3>GANGWON FC <b>CSR</b></h3>
+                        <h2>강웅이와 함께 으라차차</h2>
+                    <p>MORE</p>
                 </div>
-            </li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-        </ul>
-        <div class="sliderWrap">
-            <ul class="slider">
-                <li><img src="images2/slider (1).jpg" alt=""></li>
-                <li><img src="images2/slider (2).jpg" alt=""></li>
-                <li><img src="images2/slider (3).jpg" alt=""></li>
+                </li>
+                <li>
+                    <div class="juju">
+                        <h3>GANGWON FC <b>STOCK</b></h3>
+                        <h2>강원FC<b>주주확인</b></h2>
+                    <p>MORE</p>
+                </div>
+                </li>
+                <li>
+                    <div class="clip">
+                        <span>GANGWON FC <b>VIDEO CLIP</b></span>
+                    </div>
+                </li>
             </ul>
+            <div class="sliderWrap">
+                <ul class="slider">
+                    <li>
+                        <img src="images2/slide1.png" alt="">
+                        <span>강원도</span>
+                    </li>
+                    <li>
+                        <img src="images2/slide2.png" alt="">
+                        <span>high1 Resort</span>
+                    </li>
+                    <li>
+                        <img src="images2/slide3.png" alt="">
+                        <span>춘천시</span>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="sponser"></div>
