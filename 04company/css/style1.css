@@ -182,6 +182,7 @@ h1 img {
     background: url(../images2/sun-1617470_1280.jpg) no-repeat;
     background-position: center;
     background-size: cover;
+    margin-bottom: 10px;
 }
 .sponser .eng {
     position: relative;
@@ -210,6 +211,7 @@ h1 img {
     display: flex;
     justify-content: space-around;
 }
+
 .feed li {
     float: left;
 }
