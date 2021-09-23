@@ -179,8 +179,55 @@ nav {
 }
 .contents .sliderWrap {
     padding-top: 20px;
+    margin-bottom: 20px;
+    height: 150px;
+    overflow: hidden;
 }
-
+.contents .sliderWrap .slider img{
+    border-radius: 20px;
+}
+.contents .sliderWrap .slider li{
+    position: relative;
+}
+.contents .sliderWrap .slider span {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+}
+.sponser {
+    height: 200px;
+    background: url(../images2/sun-1617470_1280.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.sponser .eng {
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 5px;
+}
+.sponser .eng::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: #fff;
+    margin: 15px auto;
+}
+.sponser .kr {
+    text-align: center;
+    color: rgb(11, 16, 67);
+    font-weight: bold;
+    font-size: 18px;
+}
+.sponser .img {
+    display: flex;
+    justify-content: space-around;
+}
 @media screen and (min-width: 700px){
     
 }
