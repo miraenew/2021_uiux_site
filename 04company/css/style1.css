@@ -17,26 +17,8 @@ h1 {
 h1 img {
     width: 100px;
 }
-nav {
-    float: right;
-}
-.gnb>ul>li {
-    float: left;
-    width: 100px;
-    line-height: 40px;
-}
-.gnb a{
-    color: #fff;
-    text-align: center;
-}
-.subMenu {
-    display: none;
-}
-.visualWrap {
-    width: 1920px;
-    height: 500px;
-    overflow: hidden;
-}
+
+
 .visualWrap img {
     width: 100%;
     float: left;
@@ -228,8 +210,66 @@ nav {
     display: flex;
     justify-content: space-around;
 }
+.feed li {
+    float: left;
+}
+.feed>ul>li:nth-child(1) {
+    background: rgb(255, 0, 0);
+    width: 25%;
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+}
+.feed>ul>li:nth-child(1) table {
+    margin: 0 auto;
+    padding: 10px;
+}
+.feed>ul>li:nth-child(1) table td {
+    padding: 10px;
+}
+.feed>ul>li:nth-child(1) table td a {
+    color: #fff;
+}
+.feed>ul>li:nth-child(2) {
+    width: 25%;
+}
+.feed>ul>li:nth-child(3) {
+    width: 25%;
+    background: rgb(55, 55, 55);
+}
+.feed>ul>li:nth-child(4) {
+    width: 25%;
+    background: rgb(158, 105, 105);
+}
+.feed>ul>li:nth-child(5) {
+    width: 25%;
+    background: rgb(116, 74, 74);
+}
+.feed>ul>li:nth-child(6) {
+    width: 25%;
+    background: rgb(157, 189, 41);
+}
 @media screen and (min-width: 700px){
-    
+    nav {
+        float: right;
+    }
+    .gnb>ul>li {
+        float: left;
+        width: 100px;
+        line-height: 40px;
+    }
+    .gnb a{
+        color: #fff;
+        text-align: center;
+    }
+    .subMenu {
+        display: none;
+    }
+    .visualWrap {
+        width: 1920px;
+        height: 500px;
+        overflow: hidden;
+    }
 }
 @media screen and (max-width: 699px) {
     
