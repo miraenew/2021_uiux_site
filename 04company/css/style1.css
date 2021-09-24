@@ -11,14 +11,46 @@
     width: 1200px;
     margin: 0 auto;
 }
-h1 {
-    float: left;
-}
+
 h1 img {
     width: 100px;
 }
-
-
+.toggle {
+    width: 40px;
+    height: 40px;
+    background: #000;
+    position: relative;
+    z-index: 2;
+}
+ .toggle div {
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.toggle .bar1 {
+    top: 10px;
+}
+ .toggle .bar3 {
+    top: 30px;
+}
+.toggle.active .bar1{
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.toggle.active .bar2{
+    opacity: 0;
+}
+.toggle.active .bar3{
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
 .visualWrap img {
     width: 100%;
     float: left;
@@ -211,16 +243,15 @@ h1 img {
     display: flex;
     justify-content: space-around;
 }
-
-.feed li {
-    float: left;
-}
 .feed>ul>li:nth-child(1) {
     background: rgb(255, 0, 0);
     width: 25%;
     text-align: center;
     color: #fff;
     padding-top: 10px;
+}
+.feed>ul>li {
+    float: left;
 }
 .feed>ul>li:nth-child(1) table {
     margin: 0 auto;
@@ -234,22 +265,39 @@ h1 img {
 }
 .feed>ul>li:nth-child(2) {
     width: 25%;
+    background-image: url(../images2/Rectangle\ 23.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .feed>ul>li:nth-child(3) {
     width: 25%;
-    background: rgb(55, 55, 55);
+    background-image: url(../images2/Rectangle\ 24.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .feed>ul>li:nth-child(4) {
     width: 25%;
-    background: rgb(158, 105, 105);
+    background-image: url(../images2/Rectangle\ 26.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .feed>ul>li:nth-child(5) {
     width: 25%;
-    background: rgb(116, 74, 74);
+    background-image: url(../images2/Rectangle\ 27.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .feed>ul>li:nth-child(6) {
     width: 25%;
-    background: rgb(157, 189, 41);
+    background-image: url(../images2/Rectangle\ 28.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.feed>ul>li:nth-child(7) {
+    width: 25%;
+    background-image: url(../images2/Rectangle\ 30.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 @media screen and (min-width: 700px){
     nav {
@@ -272,7 +320,24 @@ h1 img {
         height: 500px;
         overflow: hidden;
     }
+    .toggle {
+        display: none;
+    }
+    h1 {
+        float: left;
+    }
 }
 @media screen and (max-width: 699px) {
-    
+    .gnb {
+        display: none;
+    }
+    .toggle {
+        display: block;
+    } 
+    h1 {
+        float: left;
+    }
+    .visual img {
+       height: 300px;
+    }
 }
