@@ -74,6 +74,7 @@
 .contentBox {
     width: 980px;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 .contents form {
     background-color: #fff;
@@ -119,11 +120,6 @@
     padding: 5px 0;
     font-size: 18px;
 }
-.TopRightcon {
-    background-image: url(../images/02balloon.png);
-    background-position: right bottom;
-    
-}
 .TopRightcon .mainTxt .eng {
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 50px;
@@ -155,59 +151,61 @@
     width: 980px;
     margin: 0 auto;
 }
-.content2 .slider1 li {
-    position: relative;
-    width: 233px;
-}
-.content2 .slider1 ul:nth-child(2) {
-    transform: translate(-50%, -50%);
-}
-.content2 .slider1 li:nth-child(1) .txt {
-    background: rgb(108, 185, 131);
-    color: #fff;
-}
-.content2 .slider1 li>.txt {
-    background: rgb(28, 43, 44);
-    padding: 8px 10px;
-    color: #fff;
-    display: inline-block;
-    width: 233px;
-    position: absolute;
-    top: 180px;
-}
-.weather {
-    position: relative;
-}
-.content2 .weather span {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    color: #fff;
-}
-.content2 .weather .txt{
-    background: rgba(0, 0, 0, 0.733);
-    color: #fff;
-}
-.content2 .txt .min {
-    font-size: 12px;
-}
-.content2 ul:nth-child(3) li {
+.content2>ul>li {
     float: left;
+    width: calc(100% / 4);
 }
-.snstour {
-    position: relative;
-}
-.snstour span{
-    position: absolute;
-    font-size: 15px;
-    top: 10px;
-}
-.content2 .snstour .txt{
-    background: rgba(2, 19, 255, 0.733);
+.content2>ul>li:first-child li .txt{
+    background: rgb(21, 38, 39);
+    padding: 5px 10px;
     color: #fff;
 }
-.content2 ul i:nth-child(1),
-.content2 ul i:nth-child(2),
-.content2 ul i:nth-child(3) {
-    background: rgb(229, 255, 0); 
+.content2>ul>li:nth-child(2) li .txt {
+    background: #12202e;
+    padding: 5px 10px;
+    color: #fff;
+}
+.small {
+    font-size: 14px;
+}
+.content2>ul>li:nth-child(3) {
+    position: relative;
+}
+.content2>ul>li:nth-child(3) span {
+    position: absolute;
+    top: 10px;
+    left: 90px;
+}
+.content2>ul>li:nth-child(3) .txt{
+    background-color: rgba(0, 0, 0, 0.808);
+    color: #fff;
+    padding: 5px;
+}
+.content2>ul>li:nth-child(4) .txt{
+    background-color: rgb(54, 101, 204);
+    color: #fff;
+    padding: 5px;
+}
+.content2>ul>li:nth-child(4) {
+    position: relative;
+}
+.content2>ul>li:nth-child(4) span {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    letter-spacing: -2px;
+    color: #555;
+    font-weight: bold;
+}
+.content3 {
+    width: 980px;
+    margin: 0 auto;
+}
+.content3 li {
+    float: left;
+    margin-right: 20px;
+    width: calc(100% / 4);
+}
+.content3 li img {
+    width: 100%;
 }
