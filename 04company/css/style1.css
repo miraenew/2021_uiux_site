@@ -241,7 +241,8 @@ h1 img {
     justify-content: space-around;
 }
 .feed {
-    width: 1200px;
+    width: 1000px;
+    margin: 0 auto;
 }
 .feed>ul>li:nth-child(1) {
     background: rgb(255, 0, 0);
