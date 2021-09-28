@@ -51,16 +51,14 @@ h1 img {
 }
 .contentWrap {
     position: relative;
-    top: -100px;
 }
 .contents {
     width: 1200px;
     height: 500px;
-    margin: 0 auto;
-    /* position: absolute;
+    position: absolute;
     top: -50px;
     left: 50%;
-    transform: translateX(-50%); */
+    transform: translateX(-50%);
 }
 .contents>ul>li {
    float: left;
@@ -345,65 +343,10 @@ h1 img {
     width: 264px;
     height: 100px;
 }
-.noticeWrap {
-    width: 1200px;
-    margin: 0 auto;
+.notice {
     color: #fff;
     background: #000;
     height: 30px;
-    margin-bottom: 10px;
-}
-.noticeWrap h2 {
-    margin-left: 20px;
-}
-.notice {
-    width: 1200px;
-    margin: 0 auto;
-}
-.notice li {
-    float: left;
-}
-.notice li:nth-child(3){
-    background: #000;
-    width: 265px;
-    height: 265px;
-}
-.notice li:nth-child(4){
-    background: #000;
-    width: 265px;
-    height: 265px;
-}
-.notice li:nth-child(3) h3:first-child {
-    color: rgb(255, 89, 0);
-    text-align: center;
-    padding: 10px;
-}
-.notice li:nth-child(3) h3:last-child {
-    color: #fff;
-    text-align: center;
-}
-.notice li:nth-child(3) h3 {
-    position: relative;
-}
-.notice li:nth-child(3) .txt::after {
-    content: "";
-    display: block;
-    width: 250px;
-    height: 1px;
-    background: #fff;
-    margin: 10px auto;
-}
-.player {
-    padding: 0 10px;
-}
-.player img {
-    float: left;
-}
-.player h1 {
-    color: #fff;
-}
-.player p {
-    color: #fff;
 }
 @media screen and (min-width: 700px){
     .headerWrap {

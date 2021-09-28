@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/* 공통 */
+#header {
+    width: 100%;
+    background: rgb(29, 27, 27);
+    position: fixed;
+    top: 20px;
+    z-index: 1;
+}
+.headerWrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+.toggle {
+    width: 40px;
+    height: 40px;
+    background: #000;
+    position: relative;
+    z-index: 2;
+}
+.toggle div {
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.toggle .bar1 {
+    top: 10px;
+}
+ .toggle .bar3 {
+    top: 30px;
+}
+.toggle.active .bar1{
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.toggle.active .bar2{
+    opacity: 0;
+}
+.toggle.active .bar3{
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.visual {
+    position: relative;
+}
+.visual h1 {
+    color: #fff;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mainContain {
+    width: 1200px;
+    margin: 0 auto;
+}
+.box li {
+    float: left;
+    height: 200px;
+}
+.box li:nth-child(1){
+    width: 25%;
+    background: rgb(112, 91, 91);
+}
+.box li:nth-child(2){
+    width: 50%;
+    background: rgb(167, 31, 31);
+}
+.box li:nth-child(3){
+    width: 25%;
+    background: rgb(112, 72, 72);
+}
+.box li:nth-child(4){
+    width: 25%;
+    background: rgb(95, 136, 97);
+}
+.box li:nth-child(5){
+    width: 25%;
+    background: rgb(34, 138, 34);
+}
+.box li:nth-child(6){
+    width: 50%;
+    background: rgb(80, 201, 10);
+}
+/* pc */
+@media screen and (min-width: 700px){
+    .toggle {
+        display: none;
+    }
+    .mainLi {
+        float: right;
+    }
+    .mainLi a {
+        color: #fff;
+        display: block;
+        padding: 10px;
+    }
+    .subMenu {
+        display: none;
+    }
+    .visual h1 {
+        font-size: 40px;
+    }
+}
+/* mobile */
+@media screen and (max-width: 699px) {
+    .gnb {
+        display: none;
+    }
+    .visual h1 {
+        font-size: 16px;
+    }
+    .mainContain {
+        width: 100%;
+    }
+    .box li:nth-child(1){
+        order: 1;
+        width: 50%;
+    }
+    .box li:nth-child(2){
+        order: 3;
+        width: 100%;
+    }
+    .box li:nth-child(3){
+        order: 2;
+        width: 50%;
+    }
+    .box li:nth-child(4){
+        order: 5;
+        width: 50%;
+    }
+    .box li:nth-child(5){
+        order: 6;
+        width: 50%;
+    }
+    .box li:nth-child(6){
+        order: 4;
+        width: 100%;
+    }
+}
