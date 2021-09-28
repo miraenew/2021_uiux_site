@@ -76,6 +76,14 @@
     margin: 0 auto;
     margin-bottom: 20px;
 }
+.contents form {
+    background-color: #fff;
+    width: 350px;
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    left: 150px;
+}
 .TopLeftcon {
     float: left;
 }

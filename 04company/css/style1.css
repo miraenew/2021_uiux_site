@@ -7,11 +7,6 @@
     top: 20px;
     z-index: 1;
 }
-.headerWrap {
-    width: 1200px;
-    margin: 0 auto;
-}
-
 h1 img {
     width: 100px;
 }
@@ -53,16 +48,17 @@ h1 img {
 }
 .visualWrap img {
     width: 100%;
-    float: left;
 }
 .contentWrap {
-    margin: 0 auto;
     position: relative;
 }
 .contents {
     width: 1200px;
+    height: 500px;
     position: absolute;
-    top: -100px;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .contents>ul>li {
    float: left;
@@ -210,7 +206,7 @@ h1 img {
     transform: translateY(-50%);
 }
 .sponser {
-    width: 1200px;
+    width: 100%;
     height: 200px;
     background: url(../images2/sun-1617470_1280.jpg) no-repeat;
     background-position: center;
@@ -245,7 +241,8 @@ h1 img {
     justify-content: space-around;
 }
 .feed {
-    width: 1200px;
+    width: 1000px;
+    margin: 0 auto;
 }
 .feed>ul>li:nth-child(1) {
     background: rgb(255, 0, 0);
@@ -344,7 +341,16 @@ h1 img {
     width: 264px;
     height: 100px;
 }
+.notice {
+    color: #fff;
+    background: #000;
+    height: 30px;
+}
 @media screen and (min-width: 700px){
+    .headerWrap {
+        width: 1200px;
+        margin: 0 auto;
+    }
     nav {
         float: right;
     }
@@ -370,6 +376,13 @@ h1 img {
     }
     h1 {
         float: left;
+    }
+    .sns img{
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30px;
     }
 }
 @media screen and (max-width: 699px) {
