@@ -393,17 +393,74 @@ h1 img {
     background: #fff;
     margin: 10px auto;
 }
+.notice li:nth-child(3) .player::after {
+    content: "";
+    display: block;
+    width: 250px;
+    height: 1px;
+    background: #fff;
+    margin: 10px auto;
+}
 .player {
-    padding: 0 10px;
+    padding: 0 20px;
 }
 .player img {
     float: left;
 }
 .player h1 {
     color: #fff;
+    padding-left: 30px;
 }
 .player p {
     color: #fff;
+    font-size: 15px;
+    float: left;
+    padding-left: 30px;
+}
+.player1 {
+    padding: 0 20px;
+}
+.player1 img {
+    float: left;
+}
+.player1 h1 {
+    color: #fff;
+    padding-left: 30px;
+}
+.player1 p {
+    color: #fff;
+    font-size: 15px;
+    float: left;
+    padding-left: 30px;
+}
+.notice li:nth-child(4) h3:first-child {
+    color: rgb(255, 89, 0);
+    text-align: center;
+    padding-top: 10px;
+}
+.notice li:nth-child(4) h3:last-child {
+    color: #fff;
+    text-align: center;
+}
+.notice li:nth-child(4) h3:last-child::after {
+    content: "";
+    display: block;
+    width: 250px;
+    height: 1px;
+    background: #fff;
+    margin: 10px auto;
+}
+.notice li:nth-child(4) .list {
+    color: #fff;
+    font-size: 12px;
+}
+.notice li:nth-child(4) .list>li:nth-child(1) ::after {
+    content: "";
+    display: block;
+    width: 250px;
+    height: 1px;
+    background: #fff;
+    margin: 10px auto;
 }
 @media screen and (min-width: 700px){
     .headerWrap {
@@ -463,18 +520,28 @@ h1 img {
        transform: translateX(20%); */
     }
     .contents>ul>li:nth-child(1){
-        width: calc(500px / 2);
         order: 1;
+        width: 50%;
         font-size: 12px;
     }
     .contents>ul>li:nth-child(2){
         order: 3;
+        width: 100%;
     }
     .contents>ul>li:nth-child(3){
-        width: calc(500px / 2);
         order: 2;
+        width: 50%;
     }
-    .contents>ul>li:nth-child(4){}
-    .contents>ul>li:nth-child(5){}
-    .contents>ul>li:nth-child(6){}
+    .contents>ul>li:nth-child(4){
+        order: 5;
+        width: 50%;
+    }
+    .contents>ul>li:nth-child(5){
+        order: 6;
+        width: 50%;
+    }
+    .contents>ul>li:nth-child(6){
+        order: 4;
+        width: 100%;
+    }
 }
