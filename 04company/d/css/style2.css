@@ -47,11 +47,11 @@
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
 }
-.visual {
+.visualWrap {
     position: relative;
 }
-.visual h1 {
-    color: #fff;
+.visualWrap h1 {
+    color: rgb(47, 0, 255);
     letter-spacing: 5px;
     position: absolute;
     top: 50%;
@@ -90,6 +90,7 @@
     width: 50%;
     background: rgb(80, 201, 10);
 }
+
 /* pc */
 @media screen and (min-width: 700px){
     .toggle {
@@ -106,7 +107,7 @@
     .subMenu {
         display: none;
     }
-    .visual h1 {
+    .visualWrap h1 {
         font-size: 40px;
     }
 }
@@ -119,7 +120,7 @@
         display: flex;
         flex-wrap: wrap;
     }
-    .visual h1 {
+    .visualWrap h1 {
         font-size: 16px;
     }
     .mainContain {
