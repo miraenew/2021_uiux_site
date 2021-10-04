@@ -68,11 +68,35 @@
 }
 .box li:nth-child(1){
     width: 25%;
-    background: rgb(112, 91, 91);
+    background: rgb(73, 67, 67);
+}
+.box li:nth-child(1) .match  {
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+.box li:nth-child(1) .match .vs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box li:nth-child(1) .match img {
+    width: 80px;
+}
+.box li:nth-child(1) .area {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5px;
 }
 .box li:nth-child(2){
     width: 50%;
     background: rgb(167, 31, 31);
+}
+.box li:nth-child(2) li{
+    float: left;
+}
+.box li:nth-child(2) li img {
+    width: 50px;
 }
 .box li:nth-child(3){
     width: 25%;
