@@ -3,5 +3,8 @@ $(document).ready(function(){
         controls:false,
         pager:false
     });
-    
+    $(".sponserWrap").bxSlider({
+        controls:false,
+        pager:false
+    });
 });
