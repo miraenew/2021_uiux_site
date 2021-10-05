@@ -62,7 +62,7 @@
     width: 1200px;
     margin: 0 auto;
 }
-.box li {
+.box>li {
     float: left;
     height: 200px;
 }
@@ -70,47 +70,132 @@
     width: 25%;
     background: rgb(73, 67, 67);
 }
-.box li:nth-child(1) .match  {
+.box>li:nth-child(1) .match  {
     color: #fff;
     text-align: center;
     padding: 5px;
 }
-.box li:nth-child(1) .match .vs {
+.box>li:nth-child(1) .match .vs {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.box li:nth-child(1) .match img {
+.box>li:nth-child(1) .match img {
     width: 80px;
 }
-.box li:nth-child(1) .area {
+.box>li:nth-child(1) .area {
     display: flex;
     justify-content: space-around;
     padding-bottom: 5px;
 }
-.box li:nth-child(2){
+.box>li:nth-child(2){
     width: 50%;
     background: rgb(167, 31, 31);
 }
-.box li:nth-child(2) li{
-    float: left;
+.box>li:nth-child(2) .quick {
+    margin: 5px;
 }
-.box li:nth-child(2) li img {
+.box>li:nth-child(2) li{
+    float: left;
+    width: calc( 100% / 4 );
+}
+.box>li:nth-child(2) li img {
     width: 50px;
 }
-.box li:nth-child(3){
-    width: 25%;
-    background: rgb(112, 72, 72);
+.box>li:nth-child(2) .txt {
+    display: flex;
 }
-.box li:nth-child(4){
-    width: 25%;
-    background: rgb(95, 136, 97);
+.box>li:nth-child(2) span,
+.box>li:nth-child(2) p
+ {
+    color: #fff;
 }
-.box li:nth-child(5){
-    width: 25%;
-    background: rgb(34, 138, 34);
+.box>li:nth-child(2) li:nth-child(5) span,
+.box>li:nth-child(2) li:nth-child(9) span
+{
+    background: rgba(255, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 13px;
 }
-.box li:nth-child(6){
+.box>li:nth-child(3){
+    width: 25%;
+    background: rgb(211, 104, 3);
+}
+.box>li:nth-child(3) .txt {
+    text-align: center;
+    padding-top: 20px;
+}
+.box>li:nth-child(3) i {
+    letter-spacing: 10px;
+    color: #fff;
+    font-size: 25px;
+}
+.box>li:nth-child(3) img {
+    width: 50px;
+    margin: 0 auto;
+}
+.box>li:nth-child(4){
+    position: relative;
+    width: 25%;
+    background: url(../images/csr.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box>li:nth-child(4) .txt {
+    text-align: center;
+    padding: 5px;
+    text-align: center;
+}
+.box>li:nth-child(4) .txt:first-child {
+    color: rgb(255, 81, 0);
+}
+.box>li:nth-child(4) .txt:last-child {
+    color: #fff;
+    font-weight: bold;
+}
+.box>li:nth-child(4) span {
+    background: rgba(251, 255, 0, 0.412);
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+.box>li:nth-child(5){
+    position: relative;
+    width: 25%;
+    background: url(../images/stock.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box>li:nth-child(5) .txt {
+    text-align: center;
+    padding: 5px;
+    text-align: center;
+}
+.box>li:nth-child(5) .txt:first-child {
+    color: rgb(255, 81, 0);
+}
+.box>li:nth-child(5) .txt:last-child {
+    color: #fff;
+    font-weight: bold;
+}
+.box>li:nth-child(5) span {
+    background: rgba(251, 255, 0, 0.412);
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+.box>li:nth-child(6){
     width: 50%;
     background: rgb(80, 201, 10);
 }
@@ -150,27 +235,27 @@
     .mainContain {
         width: 100%;
     }
-    .box li:nth-child(1){
+    .box>li:nth-child(1){
         order: 1;
         width: 50%;
     }
-    .box li:nth-child(2){
+    .box>li:nth-child(2){
         order: 3;
         width: 100%;
     }
-    .box li:nth-child(3){
+    .box>li:nth-child(3){
         order: 2;
         width: 50%;
     }
-    .box li:nth-child(4){
+    .box>li:nth-child(4){
         order: 5;
         width: 50%;
     }
-    .box li:nth-child(5){
+    .box>li:nth-child(5){
         order: 6;
         width: 50%;
     }
-    .box li:nth-child(6){
+    .box>li:nth-child(6){
         order: 4;
         width: 100%;
     }
