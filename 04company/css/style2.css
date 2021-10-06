@@ -61,7 +61,6 @@
 .mainContain {
     width: 1200px;
     margin: 0 auto;
-    
 }
 .mainContain .box {
     margin-bottom: 20px;
@@ -69,6 +68,8 @@
 .box>li {
     float: left;
     height: 200px;
+    padding: 20px;
+    padding-bottom: 20px;
 }
 .box li:nth-child(1){
     width: 25%;
@@ -122,7 +123,7 @@
     background: rgba(255, 0, 0, 0.7);
     padding: 5px 10px;
     border-radius: 10px;
-    font-size: 13px;
+    font-size: 10px;
 }
 .box>li:nth-child(3){
     width: 25%;
@@ -235,6 +236,12 @@
     bottom: 0;
     left: 50%;
 }
+.fcSpon {
+    background-image: url(../images/sponBG.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /* pc */
 @media screen and (min-width: 700px){
     .toggle {
@@ -257,6 +264,9 @@
     .sponser {
         width: 1200px;
         margin: 0 auto;      
+    }
+    .fcSpon {
+        display: block;
     }
 }
 /* mobile */
@@ -300,5 +310,8 @@
     }
     .sponser li>img {
         height: 100px;
+    }
+    .fcSpon {
+        display: none;
     }
 }
