@@ -97,6 +97,7 @@
     display: flex;
     justify-content: space-around;
     padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 .box>li:nth-child(2){
     width: 50%;
@@ -107,11 +108,12 @@
 }
 .box>li:nth-child(2) li{
     float: left;
-    width: calc( 100% / 4 );
-    padding: 10px;
+    width: calc(100% / 4);
+    line-height: 40px;
+    
 }
 .box>li:nth-child(2) li img {
-    width: 50px;
+    height: 50px;
 }
 .box>li:nth-child(2) .txt {
     display: flex;
@@ -137,16 +139,19 @@
 }
 .box>li:nth-child(3) .txt {
     text-align: center;
-    padding-top: 20px;
+    padding: 20px;
 }
 .box>li:nth-child(3) i {
-    letter-spacing: 10px;
+    letter-spacing: 20px;
     color: #fff;
     font-size: 25px;
 }
 .box>li:nth-child(3) img {
     width: 50px;
     margin: 0 auto;
+    top: 50%;
+    transform: translateY(50%);
+    margin-bottom: 30px;
 }
 .box>li:nth-child(4){
     position: relative;
@@ -163,9 +168,14 @@
 }
 .box>li:nth-child(4) h2 {
     color: rgb(255, 81, 0);
+    text-align: center;
+    
 }
-.box>li:nth-child(4) .txt{
+.box>li:nth-child(4) .txt1{
     color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
     font-weight: bold;
 }
 .box>li:nth-child(4) span {
@@ -189,14 +199,11 @@
 .box>li:nth-child(5) .txt {
     text-align: center;
     padding: 5px;
-    text-align: center;
+    color: #fff;
+    font-weight: bold;
 }
 .box>li:nth-child(5) h2 {
     color: rgb(255, 81, 0);
-}
-.box>li:nth-child(5) .txt{
-    color: #fff;
-    font-weight: bold;
 }
 .box>li:nth-child(5) span {
     background: rgba(251, 255, 0, 0.412);
@@ -328,5 +335,11 @@
     }
     .fcSpon {
         display: none;
+    }
+    .box>li:nth-child(4) h2 {
+        font-size: 18px;
+    }
+    .box>li:nth-child(5) h2 {
+        font-size: 18px;
     }
 }
