@@ -78,7 +78,10 @@
 }
 .box li:nth-child(1){
     width: 25%;
-    background: rgb(73, 67, 67);
+    background-image: url(../images/1bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .box>li:nth-child(1) .match  {
     color: #fff;
@@ -110,7 +113,8 @@
     float: left;
     width: calc(100% / 4);
     line-height: 40px;
-    
+    left: 50%;
+    transform: translateX(30%);
 }
 .box>li:nth-child(2) li img {
     height: 50px;
@@ -145,6 +149,7 @@
     letter-spacing: 20px;
     color: #fff;
     font-size: 25px;
+    font-weight: bold;
 }
 .box>li:nth-child(3) img {
     width: 50px;
@@ -255,6 +260,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 20px;
+}
+.fcSpon h2 {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.fcSpon h4 {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
 }
 .fcSpon::after {
     content: "";
@@ -263,6 +281,15 @@
     width: 100px;
     height: 2px;
     background: rgb(255, 255, 255);
+    left: 50%;
+    top: 70px;
+    transform: translate(-50%, -50%);
+}
+.fcSpon .sponImg {
+    display: flex;
+}
+.fcSpon .sponImg img {
+    padding: 6px 20px;
 }
 /* pc */
 @media screen and (min-width: 700px){
