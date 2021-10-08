@@ -322,6 +322,7 @@
         display: flex;
         width: 1000px;
         margin: 0 auto;
+        margin-bottom: 10px;
     }
     .feedContain .feeds {
         background: rgb(255, 0, 0);
@@ -366,6 +367,15 @@
         padding: 10px 20px;
         position: absolute;
         bottom: 0;
+    }
+    .noticeWrap {
+        background: #000;
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .noticeWrap h3 {
+        color: #fff;
+        padding: 10px;
     }
 }
 /* mobile */
@@ -425,6 +435,7 @@
         background: rgb(128, 128, 128);
         text-align: center;
         color: #fff;
+        padding-top: 10px;
     }
     .feedContain .feeds li {
         float: left;
