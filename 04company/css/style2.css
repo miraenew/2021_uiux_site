@@ -343,12 +343,6 @@
 .article>ul>li:nth-child(1) td a{
     color: #fff;
 }
-.article>ul>li:nth-child(1) tr:nth-child(5) {
-    background: rgb(255, 255, 255);
-}
-.article>ul>li:nth-child(1) tr:nth-child(5) a {
-    color: #000;
-}
 .article>ul>li:nth-child(2){
     background-image: url(../images/arti2.png);
     background-position: center;
