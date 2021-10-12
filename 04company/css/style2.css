@@ -291,7 +291,105 @@
 .fcSpon .sponImg img {
     padding: 6px 20px;
 }
-
+.article {
+    width: 1000px;
+    margin: 0 auto;
+}
+.article>ul {
+    display: flex;
+}
+.article li {
+    width: calc( 100% / 4);
+    height: 200px;
+}
+.article>ul>li:nth-child(1){
+    background-image: url(../images/arti1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.article>ul>li:nth-child(1)>a>h2 {
+    background: #fff;
+    color: rgb(4, 70, 50);
+    font-size: 16px;
+    text-align: center;
+    margin: 3px;
+}
+.article>ul>li:nth-child(1)>a>p {
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    position: relative;
+    margin: 2px 0;
+}
+.article>ul>li:nth-child(1) p::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 0.4px;
+    background: rgb(255, 255, 255);
+    left: 50%;
+    top: 16px;
+    transform: translate(-50%, -50%);
+}
+.article>ul>li:nth-child(1) table {
+    margin: 0 auto;
+}
+.article>ul>li:nth-child(1) td {
+    font-size: 10px;
+    padding: 2px;
+}
+.article>ul>li:nth-child(1) td a{
+    color: #fff;
+}
+.article>ul>li:nth-child(1) tr:nth-child(5) {
+    background: rgb(255, 255, 255);
+}
+.article>ul>li:nth-child(1) tr:nth-child(5) a {
+    color: #000;
+}
+.article>ul>li:nth-child(2){
+    background-image: url(../images/arti2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.article>ul>li:nth-child(2)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 0.4px;
+    background: rgb(255, 255, 255);
+    left: 50%;
+    top: 16px;
+    transform: translate(-50%, -50%);
+}
+.article>ul>li:nth-child(2)>a>h4 {
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}
+.article>ul>li:nth-child(2)>a>h2 {
+    background: #fff;
+    color: rgb(4, 70, 50);
+    font-size: 16px;
+    text-align: center;
+    margin: 3px;
+}
+.article>ul>li:nth-child(2) p {
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    line-height: 15px;
+}
+.article>ul>li:nth-child(3){
+    background: #000;
+}
+.article>ul>li:nth-child(4){
+    background: #000;
+}
 /* pc */
 @media screen and (min-width: 700px){
     .toggle {
