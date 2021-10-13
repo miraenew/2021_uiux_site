@@ -385,18 +385,18 @@
 .article>ul>li:nth-child(3){
     background: #000;
 }
-.article>ul>li:nth-child(3) h2:nth-child(1) {
+.article>ul>li:nth-child(3) h2{
     color: rgb(255, 123, 0);
     font-size: 16px;
     text-align: center;
 }
-.article>ul>li:nth-child(3) h2:nth-child(2) {
+.article>ul>li:nth-child(3) h3 {
     color: #fff;
     font-size: 16px;
     text-align: center;
     position: relative;
 }
-.article>ul>li:nth-child(3) h2:nth-child(2)::after {
+.article>ul>li:nth-child(3) h3::after {
     content: "";
     display: block;
     position: absolute;
@@ -409,7 +409,7 @@
 }
 .article>ul>li:nth-child(3) ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 .article>ul>li:nth-child(3) li {
@@ -439,6 +439,27 @@
 .article>ul>li:nth-child(4) .num {
     color: rgb(255, 123, 0);
     font-size: 10px;
+}
+.feedContain .insta li:nth-child(1) {
+    position: relative;
+}
+.feedContain .insta li:nth-child(1) p {
+    font-size: 13px;
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+}
+.feedContain .insta li {
+    position: relative;
+}
+.feedContain .insta li p {
+    font-size: 13px;
+    color: #fff;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
 }
 /* pc */
 @media screen and (min-width: 700px){
@@ -494,27 +515,6 @@
     .feedContain .insta li {
         float: left;
         width: calc( 1000px / 4 );
-    }
-    .feedContain .insta li:nth-child(1) {
-        position: relative;
-    }
-    .feedContain .insta li:nth-child(1) p {
-        font-size: 13px;
-        background: #000;
-        color: #fff;
-        padding: 10px 20px;
-        position: absolute;
-        bottom: 0;
-    }
-    .feedContain .insta li {
-        position: relative;
-    }
-    .feedContain .insta li p {
-        font-size: 13px;
-        color: #fff;
-        padding: 10px 20px;
-        position: absolute;
-        bottom: 0;
     }
     .noticeWrap {
         background: #000;
@@ -600,5 +600,33 @@
     }
     .feedContain .insta li {
         float: left;
+    }
+    .feedContain{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .feedContain .insta li:nth-child(1){
+        width: 50%;
+        order: 1;
+    }
+    .feedContain .insta li:nth-child(2){
+        width: 50%;
+        order: 2;
+    }
+    .feedContain .insta li:nth-child(3){
+        width: 50%;
+        order: 3;
+    }
+    .feedContain .insta li:nth-child(4){
+        width: 50%;
+        order: 4;
+    }
+    .feedContain .insta li:nth-child(5){
+        width: 50%;
+        order: 5;
+    }
+    .feedContain .insta li:nth-child(6){
+        width: 50%;
+        order: 6;
     }
 }
