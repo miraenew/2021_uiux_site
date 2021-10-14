@@ -11,14 +11,14 @@
     transform: translateX(-50%);
     position: fixed;
     background: #000;
-    z-index: 1;
+    z-index: 2;
 }
 .toggle {
     width: 40px;
     height: 40px;
     background: #000;
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 .toggle div {
     position: absolute;
@@ -412,6 +412,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 10px;
 }
 .article>ul>li:nth-child(3) li {
     color: #fff;
@@ -680,7 +681,11 @@
     .article{
        display: none;
     }
-    .container img {
+    #footer .container img {
         display: none;
+    }
+    #footer .container p{
+        width: 700px;
+        margin: 0 auto;
     }
 }

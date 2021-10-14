@@ -7,4 +7,10 @@ $(document).ready(function(){
         controls:false,
         pager:false
     });
+    $(".mainLi").mouseover(function(){
+        $(".subMenu").stop().slideDown();
+    });
+    $(".mainLi").mouseout(function(){
+        $(".subMenu").stop().slideUp();
+    })
 });
