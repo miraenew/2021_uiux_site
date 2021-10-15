@@ -50,7 +50,7 @@
     transform: translate(-50%, -50%) rotate(45deg);
 }
 .visualWrap {
-    position: relative;
+    /* position: relative; */
 }
 .visualWrap h1 {
     color: rgb(47, 0, 255);
@@ -65,7 +65,7 @@
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
-    bottom: 0;
+    /* bottom: 0; */
 }
 .mainContain .box {
     margin-bottom: 20px;
@@ -574,8 +574,31 @@
 }
 /* mobile */
 @media screen and (max-width: 699px) {
+    .headerWrap {
+        width: 100%;
+        position: fixed;
+    }
     .gnb {
+        width: 100%;
+        height: 100%;
+        background: rgb(178, 197, 1);
+        position: fixed;
+        top: 0;
+        left: -100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .gnb .subMenu {
         display: none;
+    }
+    .gnb a {
+        float: none;
+        text-align: center;
+        color: #fff;
+    }
+    .gnb .mainMenu {
+        transform: translateY(-30px);
     }
     .box{
         display: flex;
