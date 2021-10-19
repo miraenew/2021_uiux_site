@@ -614,7 +614,7 @@
         text-align: center;
     }
     .gnb .mainMenu {
-        transform: translateY(-30px);
+        transform: translateY(50px);
         text-align: center;
     }
     .box{
