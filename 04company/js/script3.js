@@ -15,6 +15,8 @@ $(document).ready(function(){
     $(".mainLi").mouseout(function(){
         $(".subMenu").stop().slideUp();
     });
+}else{
+    
 }
 
 
