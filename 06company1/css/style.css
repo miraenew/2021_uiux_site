@@ -25,6 +25,10 @@
     border-radius: 5px;overflow: hidden;
     box-shadow:10px 10px 25px rgba(0,0,0,0.4)
 }
+.navbar{transition:0.3s}
+.navbar.onView{background: #000;}
+
+
 
 .slider .row{position: relative;}
 .slider .row h4{font-weight: normal;font-size: 18px;}
@@ -85,5 +89,23 @@
     background: url(../images/contact-cover.jpg) no-repeat center fixed;
     background-size: cover;
 }
+
+
+
+/* subpage company */
+.subpage{
+    background: skyblue;position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.subpage.company{
+    background-image: url(../images/contact-cover.jpg);
+}
+
+.subpage.cata{
+    background-image: url(../images/nano2.jpg);
+}
+
 /* subcontent */
-.subcontent {position: relative;}
+.subcontent{position: relative;}

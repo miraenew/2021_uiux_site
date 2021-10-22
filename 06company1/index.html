@@ -15,7 +15,7 @@
     <header id="headerWrap" class="mb-3 mb-lg-5">
         <div class="bgcolor"></div>
         <div class="container px-md-0">
-            <nav class="navbar navbar-expand-md navbar-dark px-md-0">
+            <nav class="navbar navbar-expand-md navbar-dark px-md-0 ">
                 <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" style="width:180px"></a>
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +35,15 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">COMMUNITY</a>
                         </li>
-                    </ul> 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Action 1</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                            </div>
+                        </li>
+                    </ul>
+                    
                 </div>
             </nav>
             <div class="row">
@@ -80,7 +88,39 @@
                                 </a>
                             </div>
                         </div>
+                        
                     </div>
+                    
+                    
+                    <!-- <ul class="card-view">
+                        <li class="bg-white mb-3">
+                            <a href="#!" class="d-flex">
+                                <img src="images/card1.png" alt="" style="width:108px">
+                                <div class="p-3">
+                                    <h4>Lorem, ipsum.</h4>
+                                    <p>Lorem, ipsum dolor. </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="bg-white mb-3">
+                            <a href="#!" class="d-flex">
+                                <img src="images/card2.png" alt="" style="width:108px">
+                                <div class="p-3">
+                                    <h4>Lorem, ipsum.</h4>
+                                    <p>Lorem, ipsum dolor. </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="bg-white">
+                            <a href="#!" class="d-flex">
+                                <img src="images/card3.png" alt="" style="width:108px">
+                                <div class="p-3">
+                                    <h4>Lorem, ipsum.</h4>
+                                    <p>Lorem, ipsum dolor. </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul> -->
                 </div>
             </div>
         </div>
@@ -128,6 +168,8 @@
             </div>
         </div>
     </div>
+
+
     <div class="banner mb-5">
         <div class="container">
             <div class="row">
@@ -384,6 +426,53 @@
 
         
         });
+
+        
+        let winWidth = 0;
+        
+        
+        $(window).resize(function(){
+            winSize()
+            console.log(winWidth)
+        })
+        
+        function winSize(){
+            winWidth = $(window).width()
+            
+            let onView = true;
+        
+            if(winWidth < 768){
+                
+                $(".navbar-toggler").click(function(){
+                    if(onView == true){
+                        $(".navbar").addClass("onView")
+                        onView = false;
+                    }else{
+                        $(".navbar").removeClass("onView");
+                        onView = true;
+                    }
+                    
+                });
+            }else{
+                $(".navbar").removeClass("onView");
+                $(".navbar-collapse").removeClass("show");
+            }
+
+        }
+        winSize()
+
+        $(window).scroll(function(){
+            let scrollY = $(window).scrollTop();
+            console.log(scrollY)
+            if(scrollY > 300){
+                $(".navbar").addClass("fixed-top bg-dark px-lg-5")
+            }else{
+                $(".navbar").removeClass("fixed-top bg-dark px-lg-5")
+            }
+        })
+
+        
+        
     </script>
 
 

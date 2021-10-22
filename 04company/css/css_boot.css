@@ -7,19 +7,42 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-.content li {float: left;}
-.content li:nth-child(1){
+.content .main {float: left;} 
+.content .main:nth-child(1){
     width: 25%;
+    background: #000;
 }
-.content li:nth-child(1){
+.content .main:nth-child(1)>h6 {color: #fff;}
+.content .main:nth-child(1) .match,
+.content .main:nth-child(1) .txt
+{color: #fff;}
+.content .main:nth-child(1) .match img{width: 100px;}
+.content .main:nth-child(1) .team {color: #fff;}
+.content .main:nth-child(2){
     width: 50%;
+    background: #ccc;
 }
-.content li:nth-child(1){
+.content .main:nth-child(3){
     width: 25%;
+    background: #000;
 }
-.content li:nth-child(1){}
-.content li:nth-child(1){}
-.content li:nth-child(1){}
-.content li:nth-child(1){}
-.content li:nth-child(1){}
+.content .main:nth-child(4){
+    width: 25%;
+    background: #ccc;
+}
+.content .main:nth-child(5){
+    width: 25%;
+    background: #000;
+}
+.content .main:nth-child(6){
+    width: 50%;
+    background: #ccc;
+}
+.content .main:nth-child(7){
+    width: 50%;
+    background: #333;
+}
+.content .main:nth-child(8){
+    width: 50%;
+    background: #000;
+}
