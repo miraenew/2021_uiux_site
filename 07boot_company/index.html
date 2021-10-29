@@ -19,10 +19,11 @@
           transform: translate(0,-50%);
           border: 3px solid rgb(213, 199, 8); color: rgb(0, 0, 0); font-size: 15px; background: rgb(255, 255, 255);}
       .swiper-slide .txt a {font-size: 12px;background: rgb(250, 213, 0);padding: 5px 10px;}
-      .best-sell {transform: translateX(10%);}
+      .best-sell {margin: 0 auto;}
       .best-sell .txt {padding: 20px;}
       .best-sell .txt p {width: 500px;}
       .best-sell .txt a {background: rgb(250, 213, 0);padding: 5px 10px;font-size: 12px;}
+      .gift-best img {width: calc( 1100px / 4 );margin-right: 10px;}
   </style>
 </head>
 <body>
@@ -92,18 +93,8 @@
             <h5 class="text-left">가까운 매장 찾기</h5>
             <div class="row">
                 <div class="col-10">
-                    <!--
-	* 카카오맵 - 약도서비스
-	* 한 페이지 내에 약도를 2개 이상 넣을 경우에는
-	* 약도의 수 만큼 소스를 새로 생성, 삽입해야 합니다.
--->
-<!-- 1. 약도 노드 -->
 <div id="daumRoughmapContainer1635489226571" class="root_daum_roughmap root_daum_roughmap_landing"></div>
-
-<!-- 2. 설치 스크립트 -->
 <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-
-<!-- 3. 실행 스크립트 -->
 <script charset="UTF-8">
 	new daum.roughmap.Lander({
 		"timestamp" : "1635489226571",
@@ -117,9 +108,9 @@
             </div>
         </div>
     </div>
-    <div class="best-sell">
+    <div class="best-sell mb-5">
         <div class="container">
-            <h5 class="text-left">베스트 셀러</h5>
+            <h5 class="text-center mb-5">베스트 셀러</h5>
             <div class="row">
                 <div class="col-lg-10 d-flex col-md-5">
                     <img src="images/bestsell.png" alt="" width="500px" class="img-fluid">
@@ -145,7 +136,27 @@
     </div>
     <div class="gift-best">
         <div class="container">
-            <h5 class="text-left">기프트 세트 베스트셀러</h5>
+            <h5 class="text-center">기프트 세트 베스트셀러</h5>
+            <div class="row">
+                <div class="col-md-3 d-flex">
+                    <g1>
+                        <img src="images/best-gift.png" alt="">
+                        <p class="text-center">[기프트] 필로우 미스트 세트(미니시어 핸드크림 증정)</p>
+                    </g1>
+                    <div class="g1">
+                        <img src="images/best-gift2.png" alt="">
+                        <p class="text-center">[기프트] 홈 퓨리파잉 미스트 세트(홈 타블렛 증정)</p>
+                    </div>
+                    <div class="g1">
+                        <img src="images/best-gift3.png" alt="">
+                        <p class="text-center">[기프트] 클린핸드 시어 버베나 핸드 앤 바디 듀오 세트</p>
+                    </div>
+                    <div class="g1">
+                        <img src="images/best-gift4.png" alt="">
+                        <p class="text-center">[기프트] 클린핸드 시어 핸드 앤 바디 듀오 세트</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="box row">
