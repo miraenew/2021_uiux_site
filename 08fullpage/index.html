@@ -46,8 +46,13 @@
          .sliderPager .bx_pager a:hover {background: red;}
          .section .view01 {transform: translateY(60vh);transition: 0.6s;}
          .section .view01.on {transform: translateY(0);}
-         .section .view02 {opacity: 0;transition: 0.6s;}
-         .section .view02.on {opacity: 1;}
+         .section .view02 {
+             animation: opaTree 0.6s infinite alternate;
+         }
+         @keyframes opaTree {
+             0% {opacity: 0;}
+             100% {opacity: 1;}
+         }
          .navbar:hover {background: #fff;}
          .navbar .nav-item {padding: 0 20px;}
          .news {display: none;}
@@ -153,7 +158,7 @@
                     </div>
                 </div>
                 <div class="scrollBtn">
-                    <a href="#0st"></a>
+                    <a href="#0st"><img src="images/image 7.png" alt=""></a>
                 </div>
                 <div class="news" data-anchor="#0st"></div>
             </div>
