@@ -46,10 +46,11 @@
          .sliderPager .bx_pager a:hover {background: red;}
          .section .view01 {transform: translateY(60vh);transition: 0.6s;}
          .section .view01.on {transform: translateY(0);}
-         .section .view02 {transform: translateY(60vh);transition: 0.6s;}
-         .section .view02.on {transform: translateY(0);}
+         .section .view02 {opacity: 0;transition: 0.6s;}
+         .section .view02.on {opacity: 1;}
          .navbar:hover {background: #fff;}
          .navbar .nav-item {padding: 0 20px;}
+         .news {display: none;}
     </style>
 
     <script>
@@ -63,7 +64,7 @@
                 anchors:["m1st","m2st","m3st","m4st"],
                 navigation:true,
                 navigationPosition:"fp-right",
-                navigationTooltips:["First","Second","Third","Forth"],
+                navigationTooltips:["About Us","What's New","Why Samsung","Useful Pages"],
                 responsiveWidth: 768,
                 afterLoad:function(anchorsLink,index){
                     if(index == 1){ 
@@ -151,6 +152,10 @@
                         <a href="#" data-slide-index="2">page3</a>
                     </div>
                 </div>
+                <div class="scrollBtn">
+                    <a href="#0st"></a>
+                </div>
+                <div class="news" data-anchor="#0st"></div>
             </div>
             
         </div>
