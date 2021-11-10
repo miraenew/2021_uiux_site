@@ -15,6 +15,7 @@
 .bx-wrapper .bx-pager {
     bottom: 30px;
 }
+.sliderWrap {position: relative;}
 .nextBtn, .preBtn{position: absolute; top: 50%; margin-top: -50px; cursor: pointer;}
        .nextBtn{right: 0;}
        .preBtn {left: 0;}
@@ -33,6 +34,6 @@
     left: 60px;
     color: #fff;
 }
-.slide>li>.txt>span:nth-child(1) {font-size: 20px;}
-.slide>li>.txt>span:nth-child(2) {font-size: 84px;}
-.slide>li>.txt>span:nth-child(3) {}
+@media screen and (max-width: 699px) {
+    
+}
