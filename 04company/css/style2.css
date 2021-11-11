@@ -1,10 +1,16 @@
 @charset "UTF-8";
 /* 공통 */
 
+
+
+
+
 @media screen and (min-width: 701px){
+    .headerWrap h1.logo{position: absolute;top:-45px}
+    .headerWrap h1.logo img{width: 150px;}
     .headerWrap {
         width: 1200px;
-        top: 10px;
+        top: 50px;
         left: 50%;
         transform: translateX(-50%);
         position: fixed;
@@ -507,6 +513,9 @@
 }
 /* pc */
 @media screen and (min-width: 700px){
+
+   
+
     .toggle {
         display: none;
     }
@@ -602,6 +611,10 @@
 }
 /* mobile */
 @media screen and (max-width: 699px) {
+
+    .headerWrap h1.logo{position: absolute;left:50%;transform: translateX(-50%);}
+    .headerWrap h1.logo img{width: 100px;}
+
     .headerWrap {
         width: 100%;
         position: fixed;

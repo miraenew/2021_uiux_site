@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/jquery.bxslider.js"></script>
+    <script src="../js/jquery.fullPage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+
+            $("#fullpage").fullpage()
+
+           var myslide = $(".slide").bxSlider({
+               controls:false,
+               pager:false
+           });
+           
+            $(".nextBtn").click(function(){
+                myslide.goToNextSlide(); //bxsliderm public method option
+            });
+            $(".preBtn").click(function(){
+                myslide.goToPrevSlide(); //bxsliderm public method option
+            });
+            var myslide2 = $(".slide2").bxSlider({
+               controls:false,
+               pager:false
+           });
+           
+            $(".nextBtn2").click(function(){
+                myslide2.goToNextSlide(); //bxsliderm public method option
+            });
+            $(".preBtn2").click(function(){
+                myslide2.goToPrevSlide(); //bxsliderm public method option
+            });
+            // ///////////////////////////////////
+            new Swiper('.swiper-container', {
+
+            slidesPerView : 3, // 동시에 보여줄 슬라이드 갯수
+            spaceBetween : 5, // 슬라이드간 간격
+            slidesPerGroup : 4, // 그룹으로 묶을 수, slidesPerView 와 같은 값을 지정하는게 좋음
+
+            // 그룹수가 맞지 않을 경우 빈칸으로 메우기
+            // 3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듬
+            loopFillGroupWithBlank : true,
+            loop : true, // 무한 반복
+            pagination : { // 페이징
+            el : '.swiper-pagination',
+            clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
+},
+navigation : { // 네비게이션
+    nextEl : '.swiper-button-next', // 다음 버튼 클래스명
+    prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+},
+});
+
+
+            ///////////////////////////////////////
+        });
+    </script>
+    <style>
+        .section.page1{
+            background-image: url(images/slider1.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .section.page1 .box {position: absolute; top: 30px;}
+        .section.page1 .box a {
+            margin: 5px;
+            background: #000; color: #fff; display: block;
+            padding: 10px 40px; border: 1px solid #fff; text-align: center;
+            position: relative; bottom: 0px;
+        }
+        .slideWrap2 li a:hover {background: #fff; color: #000;}
+        .section.page2{
+            background-image: url(images/slider2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .section.page3{
+            background-image: url(images/slider3.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .section.page4{
+            background-image: url(images/slider4.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .section.page5{
+            background-image: url(images/slider5.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        @media screen and (min-width: 700px) {
+            
+        }
+        @media screen and (max-width: 699px) {
+            .page1 {background-image: url(images/mo01.webp);}
+            .page2 {background-image: url(images/mo02.webp);}
+            .page3 {background-image: url(images/mo03.webp);}
+            .page4 {background-image: url(images/mo04.webp);}
+            .page5 {background-image: url(images/mo05.webp);}
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-sm navbar-light c-fff">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/jeneLogo.webp" alt="">
+            </a>
+            <button class="navbar-toggler d-lg-none bg-light" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-light" href="#">모델</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">구매</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">체험</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">멤버스</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">제네시스</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link text-light" href="#">고객센터</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">마이페이지</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="images/search.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+   
+    
+    <!-- 풀페이지 -->
+    <div id="fullpage">
+        <div class="section page1 " data-anchor="m1st">
+            <div class="container-fluid">
+                <div class="row">
+                   <div class="box col-md-12">
+                       <div class="txt text-dark">
+                        <span>GENESIS</span><br>
+                        <h1>GV60</h1><br>
+                        <span>당신과의 교감을 위해</span>
+                    </div>
+                    <a href="#" class="text-light">더 알아보기</a>
+                    <a href="#" class="text-light">견적내기</a>
+                   </div> 
+        </div>
+    </div>
+</div>
+<div class="section page2" data-anchor="m2st">
+    <div class="container view02">
+        <div class="row">
+            <div class="col-md-5 d-flex justify-content-around">
+                <h3>What's New</h3>
+                <ul class="sns d-flex">
+                    <li><img src="images/net21.png" alt=""></li>
+                    <li><img src="images/net22.png" alt=""></li>
+                    <li><img src="images/net23.png" alt=""></li>
+                    <li><img src="images/net24.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section page3" data-anchor="m3st">
+    <div class="container view03"></div>
+</div>
+<div class="section page4" data-anchor="m4st">
+    <div class="container view04"></div>
+</div>
+</div>
+
+</body>
+</html>
