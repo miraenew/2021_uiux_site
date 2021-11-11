@@ -9,50 +9,88 @@
     <link rel="stylesheet" href="css/fullpage.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
     <script src="../js/jquery-3.1.1.min.js"></script>
     <script src="../js/jquery.bxslider.js"></script>
     <script src="../js/jquery.fullPage.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <script>
         $(document).ready(function(){
            var myslide = $(".slide").bxSlider({
-               controls:false
-           })
+               controls:false,
+               pager:false
+           });
+           
             $(".nextBtn").click(function(){
                 myslide.goToNextSlide(); //bxsliderm public method option
             });
             $(".preBtn").click(function(){
                 myslide.goToPrevSlide(); //bxsliderm public method option
             });
-        })
+            var myslide2 = $(".slide2").bxSlider({
+               controls:false,
+               pager:false
+           });
+           
+            $(".nextBtn2").click(function(){
+                myslide2.goToNextSlide(); //bxsliderm public method option
+            });
+            $(".preBtn2").click(function(){
+                myslide2.goToPrevSlide(); //bxsliderm public method option
+            });
+            // ///////////////////////////////////
+            new Swiper('.swiper-container', {
+
+            slidesPerView : 4, // 동시에 보여줄 슬라이드 갯수
+            spaceBetween : 30, // 슬라이드간 간격
+            slidesPerGroup : 4, // 그룹으로 묶을 수, slidesPerView 와 같은 값을 지정하는게 좋음
+
+            // 그룹수가 맞지 않을 경우 빈칸으로 메우기
+            // 3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듬
+            loopFillGroupWithBlank : true,
+            loop : true, // 무한 반복
+            pagination : { // 페이징
+            el : '.swiper-pagination',
+            clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
+},
+navigation : { // 네비게이션
+    nextEl : '.swiper-button-next', // 다음 버튼 클래스명
+    prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+},
+});
+
+
+            ///////////////////////////////////////
+        });
     </script>
 </head>
 <body>
     <header id="header">
-        <nav class="navbar navbar-expand-sm">
+        <nav class="navbar navbar-expand-sm navbar-light c-fff">
             <a class="navbar-brand" href="index.html">
                 <img src="images/jeneLogo.webp" alt="">
             </a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            <button class="navbar-toggler d-lg-none bg-light" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">모델</a>
+                        <a class="nav-link text-light" href="#">모델</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">구매</a>
+                        <a class="nav-link text-light" href="#">구매</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">체험</a>
+                        <a class="nav-link text-light" href="#">체험</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">멤버스</a>
+                        <a class="nav-link text-light" href="#">멤버스</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">제네시스</a>
+                        <a class="nav-link text-light" href="#">제네시스</a>
                     </li>
                     
                 </ul>
@@ -60,10 +98,10 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">고객센터</a>
+                        <a class="nav-link text-light" href="#">고객센터</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">마이페이지</a>
+                        <a class="nav-link text-light" href="#">마이페이지</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
@@ -74,6 +112,7 @@
             </div>
         </nav>
     </header>
+    <!-- pc화면에서의 박스 슬라이드 -->
     <div class="sliderWrap">
         <ul class="slide">
             <li>
@@ -133,16 +172,134 @@
             <img src="images/btn_left.png" alt="">
         </div>
     </div>
-    <div id="fullpage">
-        <div class="section page1" data-anchor="m1st">
-            <video id="myVideo" data-autoplay muted loop>
-                <iframe width="1175" height="671" src="https://www.youtube.com/embed/ExBGvJPBn4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-            </video>
-            <div class="container bg-info view01">
-                
-            </div>
+    <!-- pc화면에서의 박스 슬라이드 -->
+
+    <!-- 모바일 화면에서의 박스 슬라이드 -->
+    <div class="slideWrap2">
+        <ul class="slide2">
+            <li>
+                <img src="images/mo01.webp" alt="">
+                <div class="txt">
+                    <span>GENESIS</span><br>
+                    <h1>GV60</h1><br>
+                    <span>당신과의 교감을 위해</span>
+                </div>
+                <a href="#">더 알아보기</a>
+                <a href="#">견적내기</a>
+            </li>
+            <li>
+                <img src="images/mo02.webp" alt="">
+                <div class="txt">
+                    <span>미래를 향한 대담한 비전</span><br>
+                    <h1>FUTURING</h1><br>
+                    <span>GENESIS</span>
+                </div>
+                <a href="#">더 알아보기</a>
+                <a href="#">영상보기</a>
+            </li>
+            <li>
+                <img src="images/mo03.webp" alt="">
+                <div class="txt">
+                    <span>GENESIS</span><br>
+                    <h1>GV80</h1><br>
+                    <span>당신과 모두를 위한 디자인</span>
+                </div>
+                <a href="#">더 알아보기</a>
+                <a href="#">견적내기</a>
+            </li>
+            <li>
+                <img src="images/mo04.webp" alt="">
+                <div class="txt">
+                    <span>GENESIS</span><br>
+                    <h1>G80 SPORT</h1>
+                </div>
+                <a href="#">더 알아보기</a>
+                <a href="#">견적내기</a>
+            </li>
+            <li>
+                <img src="images/mo05.webp" alt="">
+                <div class="txt">
+                    <span>ELECTRIFIED</span><br>
+                    <h1>G80</h1><br>
+                    <span>전기차 그 이상의 시작</span>
+                </div>
+                <a href="#">더 알아보기</a>
+                <a href="#">견적내기</a>
+            </li>
+        </ul>
+        <div class="nextBtn2">
+            <img src="" alt="">
+        </div>
+        <div class="preBtn2">
+            <img src="" alt="">
         </div>
     </div>
+    <!-- 모바일 화면에서의 박스 슬라이드 -->
+    
+    <!-- 풀페이지 -->
+    <div id="fullpage">
+        <div class="section page1">
+            <iframe width="100%" height="600" src="https://www.youtube.com/embed/ExBGvJPBn4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="section page2">
+            <div class="container">
+                <div class="row">
+                    .col-md-
+                </div>
+            </div>
+        </div>
+        <!-- 클래스명은 변경하면 안 됨 -->
+<div class="swiper-container">
+    <div style="text-align:center; margin-top:5px;">
+        <h3>OUR MODELS</h3>
+        <p>역동적이면서도 우아한 디자인과 최첨단 기술을 탑재한 제네시스 브랜드의 라인업을 살펴보세요.</p>
+        <div class="dropdown">
+            <button class="btn dropdown-toggle border-bottom w-50" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                        SUV
+                    </button>
+            <div class="dropdown-menu w-50" aria-labelledby="triggerId">
+                <a class="dropdown-item" href="#">SUV</a>
+                <a class="dropdown-item" href="#">ALL</a>
+                <a class="dropdown-item">SEDAN</a>
+                <a class="dropdown-item" href="#">SUV</a>
+            </div>
+        </div>
+        
+    </div>
+	<div class="swiper-wrapper">
+		<div class="swiper-slide">
+            <img src="images/model01.webp">
+        </div>
+		<div class="swiper-slide">
+            <img src="images/model02.webp">
+        </div>
+		<div class="swiper-slide">
+            <img src="images/model03.webp">
+        </div>
+		<div class="swiper-slide">
+            <img src="images/model04.webp">
+        </div>
+		<div class="swiper-slide">
+            <img src="images/model05.webp">
+        </div>
+		<div class="swiper-slide">
+            <img src="images/model06.webp">
+        </div>
+		<div class="swiper-slide">
+            <img src="images/model07.webp">
+        </div>
+	</div>
+	<!-- 네비게이션 -->
+	<div class="swiper-button-next"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+	<div class="swiper-button-prev"></div><!-- 이전 버튼 -->
+
+	<!-- 페이징 -->
+	<div class="swiper-pagination"></div>
+</div>
+        <div class="section page4"></div>
+    </div>
+    <!-- 풀페이지 -->
     <footer id="footer"></footer>
 </body>
 </html>
