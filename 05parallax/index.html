@@ -1,0 +1,168 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@miraenew 
+hanyong5
+/
+2021_uiux_site
+Public
+1
+01
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+2021_uiux_site/05parallax/index.html
+@hanyong5
+hanyong5 bootstrap v1
+Latest commit 7873862 25 days ago
+ History
+ 1 contributor
+125 lines (98 sloc)  3.82 KB
+   
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parallax</title>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        body{height: 400vh;background: #210002;overflow-x:hidden;}
+        .header{
+            height: 100vh;position: relative;overflow: hidden;
+            background: #FEAE1B;
+        }
+        .layer{
+            width: 100vw;height: 100vh;
+            position: absolute;
+            
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-size: auto 900px;
+        }
+        .p0{background-image: url(images/parallax0.png);}
+        .p1{background-image: url(images/parallax1.png);}
+        .p2{background-image: url(images/parallax2.png);}
+        .p3{background-image: url(images/parallax3.png);}
+        .p4{background-image: url(images/parallax4.png);}
+        .p5{background-image: url(images/parallax5.png);}
+        .p6{background-image: url(images/parallax6.png);}
+        .p7{background-image: url(images/parallax7.png);}
+        .p8{background-image: url(images/parallax8.png);}
+
+        .container{width: 1200px;margin: 0 auto;background: white;trans}
+
+        @media screen and (max-width:700px){
+            .layer{
+            background-size: auto 650px;
+            }
+            .container{width: 90%;}
+        }
+    </style>
+    <script>
+
+        $(function() {
+
+            Loading();	
+            setTimeout("closeLoading()", 3000);
+
+        });
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="layer p0" data-speed="4"></div>
+        <div class="layer p1" data-speed="5"></div>
+        <div class="layer p2" data-speed="4"></div>
+        <div class="layer p3" data-speed="7"></div>
+        <div class="layer p4" data-speed="8"></div>
+        <div class="layer p5" data-speed="20"></div>
+        <div class="layer p6" data-speed="40"></div>
+        <div class="layer p7" data-speed="60"></div>
+        <div class="layer p8" data-speed="70"></div>
+    </div>
+
+    <div class="container">
+        11111
+    </div>
+
+    <script>
+
+        let layer = document.querySelectorAll(".layer");
+        
+
+
+        window.addEventListener("scroll",function(){
+            let scroll = window.pageYOffset;
+            //console.log(scroll);
+
+            layer.forEach(function(item,index){
+                // data-speed / scroll / style.transform
+
+                let speed = item.dataset.speed; // div.layer data-speed값
+
+                // item = document.querySelectorAll(".layer")[0] ~ [8]
+
+                item.style.transform = `translate3d(0,${scroll/speed*4}px,0)`
+                //item.style.transform = `translateY(${scroll/speed*4}px)`
+            })
+
+
+        })
+
+
+        function Loading() {
+            var maskHeight = $(document).height();
+            var maskWidth = window.document.body.clientWidth;
+
+            var mask = "<div id='mask' style='position:fixed; z-index:9000; background-color:#fff; display:none; left:0; top:0;'></div>";
+            var loadingImg = '';
+
+            loadingImg += "<div id='loadingImg' style='position:fixed; left:50%; top:40%; display:none; z-index:10000;'>";
+            loadingImg += "    <img src='images/img.gif'/>";
+            loadingImg += "</div>";
+
+            $('body').append(mask).append(loadingImg);
+
+            $('#mask').css({
+                'width' : maskWidth
+                , 'height': maskHeight
+                , 'opacity' : '1'
+            });
+
+            $('#mask').show();
+            $('#loadingImg').show();
+        }
+
+
+        function closeLoading() {
+            $('#mask, #loadingImg').fadeOut();
+            // $('#mask, #loadingImg').fadeOut(); 
+        }
+    </script>
+</body>
+</html>
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
