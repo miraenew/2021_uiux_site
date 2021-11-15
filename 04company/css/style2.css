@@ -651,8 +651,11 @@
         display: flex;
         flex-wrap: wrap;
     }
+    .visualWrap img {
+        margin: 0 auto;
+    }
     .visualWrap h1 {
-        font-size: 16px;
+        font-size: 40px;
     }
     .mainContain {
         width: 100%;
