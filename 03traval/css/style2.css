@@ -1,0 +1,76 @@
+@charset "utf-8";
+#header {
+    background: url(../images/airplane.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+}
+.hdTop {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    
+    justify-content: space-around;
+    vertical-align: middle;
+}
+
+.hdTop fieldset {background: #fff; border-radius: 20px; padding: 5px 25px;}
+.hdTop form {display: flex;}
+.hdTop form input {border: none;text-align: center;}
+.contact {display: flex; align-items: center;}
+.contact h4 {color: #fff;}
+.contact ul {margin-left: 10px;}
+.contact li {float: left; padding-left: 5px;}
+.hdBtm {width: 100%;  background: rgb(235, 235, 235); border-top: 3px solid rgb(12, 55, 148);
+    border-bottom: 3px solid rgb(12, 55, 148); }
+.gnb {width: 1000px; margin: 0 auto; display: flex; justify-content: space-around;}
+.hdBtm li {padding: 10px 30px; border-left: 1px solid rgb(208, 208, 208);}
+.hdBtm li:last-child {border-right: 1px solid rgb(208, 208, 208);}
+.wrap {background: url(../images/01background.jpg) no-repeat center;
+    background-size: cover;
+}
+.contentBox {
+    width: 1000px; display: flex; justify-content: space-between;
+    margin: 0 auto;
+}
+.reserv {display: flex; margin: 10px 0;}
+.menu li{color: #fff; width: 200px; text-align: center; padding: 25px 0;
+font-size: 1em;font-weight: bold;}
+.menu li:nth-child(1) {background: rgb(0, 58, 248);}
+.menu li:nth-child(2) {background: rgb(0, 153, 255);}
+.menu li:nth-child(3) {background: rgb(19, 140, 94);}
+.menu li:nth-child(4) {background: rgb(77, 153, 57);}
+.menu li:hover {color: #000; background:#fff; cursor: pointer;}
+form {
+    background: #fff; font-weight: bold;
+    width: 400px; margin: 0 auto;
+}
+form label {display: block; padding: 5px 0;}
+form select {width: 300px; height: 20px; font-size: 1em;
+    border-radius: 2px; text-indent: 10px; border: 1px solid rgb(172, 172, 172);
+}
+fieldset>ul>li:first-child select {width: 90%;}
+fieldset>ul>li:nth-child(2) input{width: 90%;}
+fieldset {border: 0 none; position: relative; padding-left: 10px;}
+.blind {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -999px;
+}
+form .left,
+form .right {
+    width: 180px; float: left;
+}
+form .left {margin-right: 10px;}
+form .left input,
+form .right input {
+    width: 100%; height: 25px; font-size: 1em;
+    border-radius: 2px; text-indent: 10px; border: 1px solid rgb(172, 172, 172);
+}
+form li:nth-child(2) {
+    display: flex;
+}
+form li:last-child select {width: 90%;}
+
+form li:last-child .right input {width: 50%;}
