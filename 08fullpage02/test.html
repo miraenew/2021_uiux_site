@@ -33,7 +33,30 @@
         });
     </script>
     <style>
-        .slider img {height: 100vh;}
+        .slider li:nth-child(1){
+            background-image: url(images/d.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .slider li:nth-child(2){
+            background-image: url(images/slide.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .slider li:nth-child(3){
+            background-image: url(images/A.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .slider li:nth-child(4){
+            background-image: url(images/net49.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
         .slider li {position: relative;}
         .slider .txt {position: r; left: 50px; top: 150px;}
         .slider .txt a {
@@ -70,14 +93,14 @@
             .section.page3 {
                 background: #000;
             }
-            .section.page3 .boxin:hover {transform: scale(1.2);}
+            .section.page3 .boxin:hover {
+                transform: translateY(-15px);
+                box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
+                transition: 0.6s;
+            }
             .section.page4 {background: url(images/net48.jpg);}
-            .slideWrap2 {display: none;}
         }
         @media screen and (max-width: 699px) {
-            .sliderWrap {display: none;}
-            .slideWrap2 {display: block;}
-
             .section.page1 {
                 background: #000;
             }
@@ -147,8 +170,7 @@
             <div class="sliderWrap">
                 <ul class="slider">
                     <li>
-                        <img src="" alt="">
-                        <div class="txt">
+                        <!-- <div class="txt">
                             <span>월드 프리미어</span>
                             <h1>광저우 모터쇼</h1>
                             <span>2021.11.19 11:40AM KST</span>
@@ -156,11 +178,10 @@
                         <div class="btn">
                             <a href="#">더 알아보기</a>
                             <a href="#">견적내기</a>
-                        </div>
+                        </div> -->
                     </li>
                     <li>
-                        <img src="images/slider1.webp" alt="">
-                        <div class="txt">
+                        <!-- <div class="txt">
                             <span>GENESIS</span>
                             <h1>GV60</h1>
                             <span>당신과의 교감을 위해</span>
@@ -168,11 +189,10 @@
                         <div class="btn">
                             <a href="#">더 알아보기</a>
                             <a href="#">견적내기</a>
-                        </div>
+                        </div> -->
                     </li>
                     <li>
-                        <img src="images/slider3.jpg" alt="">
-                        <div class="txt">
+                        <!-- <div class="txt">
                             <span>GENESIS</span>
                             <h1>GV80</h1>
                             <span>당신과 모두를 위한 디자인</span>
@@ -180,18 +200,17 @@
                         <div class="btn">
                             <a href="#">더 알아보기</a>
                             <a href="#">견적내기</a>
-                        </div>
+                        </div> -->
                     </li>
                     <li>
-                        <img src="images/slide.jpg" alt="">
-                        <div class="txt">
+                        <!-- <div class="txt">
                             <span>GENESIS</span>
                             <h1>G80 SPORT</h1>
                         </div>
                         <div class="btn">
                             <a href="#">더 알아보기</a>
                             <a href="#">견적내기</a>
-                        </div>
+                        </div> -->
                     </li>
                 </ul>
                 <div class="nextBtn">
@@ -201,69 +220,6 @@
                     <img src="images/btn_left.png" alt="">
                 </div>
             </div>
-
-
-
-            <div class="sliderWrap2">
-                <ul class="slider2">
-                    <li>
-                        <img src="images/d.jpg" alt="">
-                        <div class="txt">
-                            <span>월드 프리미어</span>
-                            <h1>광저우 모터쇼</h1>
-                            <span>2021.11.19 11:40AM KST</span>
-                        </div>
-                        <div class="btn">
-                            <a href="#">더 알아보기</a>
-                            <a href="#">견적내기</a>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="images/na.webp" alt="">
-                        <div class="txt">
-                            <span>GENESIS</span>
-                            <h1>GV60</h1>
-                            <span>당신과의 교감을 위해</span>
-                        </div>
-                        <div class="btn">
-                            <a href="#">더 알아보기</a>
-                            <a href="#">견적내기</a>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="images/qqq.webp" alt="">
-                        <div class="txt">
-                            <span>GENESIS</span>
-                            <h1>GV80</h1>
-                            <span>당신과 모두를 위한 디자인</span>
-                        </div>
-                        <div class="btn">
-                            <a href="#">더 알아보기</a>
-                            <a href="#">견적내기</a>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="images/zzz.png" alt="">
-                        <div class="txt">
-                            <span>GENESIS</span>
-                            <h1>G80 SPORT</h1>
-                        </div>
-                        <div class="btn">
-                            <a href="#">더 알아보기</a>
-                            <a href="#">견적내기</a>
-                        </div>
-                    </li>
-                </ul>
-                <div class="nextBtn2">
-                    <img src="images/btn_right.png" alt="">
-                </div>
-                <div class="preBtn2">
-                    <img src="images/btn_left.png" alt="">
-                </div>
-            </div>
-
-
-
         </div>
         <div class="section page2" data-anchor="m2st">
             <video id="myVideo" data-autoplay muted loop>
